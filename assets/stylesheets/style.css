@@ -225,7 +225,7 @@ top:150px;
 /*Begin CSS for Music page.*/
 
 .Albums {
-padding: 10px 10px 10px 10px;
+padding: 10px 10px 20px 10px;
 align-items: center;
 float: left;
 width: 100%;
@@ -237,13 +237,14 @@ width: 100%;
   float: left;
   display: block;
   width: 25%;
+  margin: 10px;
 }
 
 table{
-  width: 75%;
+  width: 70%;
   height: auto;
   text-align: left;
-  padding: 0px 100px;
+  padding: 0px 90px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 400;
