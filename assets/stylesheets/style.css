@@ -1,0 +1,264 @@
+header {
+  padding-top: 20px;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+body {
+  overflow: hidden;
+  float: left;
+  position: relative;
+  background-color: white;
+  width: 1400px; height: 1200px;
+  margin: 25px 100px 0px 100px;
+  vertical-align: bottom;
+  background-image: url("/assets/images/bkg-about.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#Logo {width: 100px; height: 92px;}
+
+/*Begin CSS for text in website.*/
+
+h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18pt;
+}
+
+h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16pt;
+}
+
+h3 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14pt;
+  color: #666666;
+  line-height: normal;
+}
+
+h4 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14pt;
+  color: black;
+  line-height: normal;
+}
+
+p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11pt;
+  line-height: 1.8;
+}
+
+ul {list-style-type: disc;
+   list-style-position: outside;
+   padding: 20px;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 11pt;
+   line-height: 1.8;
+}
+
+.caption {
+  font-family: Open Sans;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 11pt;
+  line-height: 1.6;
+}
+
+#highlight {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11pt;
+  line-height: 1.8;
+}
+
+/*Begin CSS for Top navigation bar.*/
+
+.topnav {
+  padding-top: 25px;
+  overflow: hidden;
+  position: fixed;
+  top: 150px;
+  width: 100%;
+  float:left;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15pt;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ffd163;
+  text-decoration-thickness: 6px
+  text-underline-offset: 3px;
+}
+
+.topnav a:active {
+  background-color: white;
+  border-bottom: 5px;
+  border-color: #ffd163;
+  border-width: thick;
+}
+
+/*Begin CSS for Splash page.*/
+
+.splash {
+  padding-top: 250px;
+  width: 1200px;
+  /*height: 80%*/
+}
+
+.videocontrols
+  controlslist: nodownload;
+  autoplay:default;
+}
+
+/* Begin CSS for About page.*/
+
+
+.content {
+overflow: hidden;
+display: inline;
+position: relative;
+float: left;
+padding-top: 275px;
+width: 1400px;
+height: 1000px;
+margin: 100px;
+top:150px;
+}
+
+.subnav {
+  float:left;
+  position: absolute;
+  display: inline-block;
+  padding-top: 275px;
+  margin-top: 225px;
+  width: 175px;
+  background-image: url("/assets/images/purplebox.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+}
+
+.subnav a{
+  display: block;
+  padding: 10px 0px 10px 0px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14pt;
+  color: black;
+  text-align: right;
+  text-decoration: none;
+  vertical-align: top;
+  margin-top: 0px;
+}
+
+#purplebox {
+  background-image: url("/assets/images/purplebox.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 40px;
+  height: 60px;
+}
+
+.maincontentbox {
+  overflow: auto;
+  display: inline-block;
+  float: left;
+  vertical-align: top;
+  position: relative;
+  margin: 100px 100px 100px 100px;
+  padding: 50px;
+  padding-left: 100px;
+  padding-bottom: 50px;
+  width: 900px;
+  height: 650px;
+  background-color: white;
+  box-shadow: 2px 4px 8px #666666;
+  margin-left: 300px;
+  top:200px;
+}
+
+.imagetextbox {
+  float: right;
+  display: block;
+  width: 25%;
+  padding: 25px 20px 20px 20px;
+}
+
+.imageinside {
+  float: left;
+  display: block;
+  width: 100%;
+  padding-bottom: 14px;
+  padding-top: 40px;
+}
+
+/*Begin CSS for Music page.*/
+
+.Albums {
+padding: 10px 10px 10px 10px;
+align-items: center;
+float: left;
+width: 100%;
+}
+
+.photocard {
+  box-shadow: 2px 4px 8px #666666;
+  border-radius: 4px;
+  float: left;
+  display: block;
+  width: 25%;
+}
+
+table{
+  width: 75%;
+  height: auto;
+  text-align: left;
+  padding: 0px 100px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 1.8;
+  float: left;
+}
+
+tr :hover {
+  background-color: #f5f5f5;
+}
+.songlist {
+  width: 75%
+  float: left;
+  padding: 10px 10px 10px 10px;
+
+
+}
