@@ -5,6 +5,8 @@ header {
   width: 100%;
 }
 
+#Logo {width: 100px; height: 92px; padding-top: 25px; padding-left: 30px;}
+
 body {
   overflow: hidden;
   float: left;
@@ -12,13 +14,31 @@ body {
   background-color: white;
   width: 1400px; height: 1200px;
   margin: 25px 100px 0px 100px;
-  vertical-align: bottom;
+}
+
+/* Begin CSS for background images.*/
+
+#bkgd-about {
   background-image: url("/assets/images/bkg-about.jpg");
   background-repeat: no-repeat;
   background-position: right;
+  background-size: cover;
 }
 
-#Logo {width: 100px; height: 92px;}
+#bkgd-discog {
+  background-image: url("/assets/images/bkg-discog.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+#bkgd-gallery {
+  background-image: url("/assets/images/bkg-gallery.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
 
 /*Begin CSS for text in website.*/
 
@@ -52,6 +72,7 @@ h4 {
   font-size: 14pt;
   color: black;
   line-height: normal;
+
 }
 
 p {
@@ -113,17 +134,10 @@ ul {list-style-type: disc;
 }
 
 .topnav a:hover {
-  text-decoration: underline;
-  text-decoration-color: #ffd163;
-  text-decoration-thickness: 6px
-  text-underline-offset: 3px;
-}
-
-.topnav a:active {
   background-color: white;
-  border-bottom: 5px;
-  border-color: #ffd163;
-  border-width: thick;
+  color: black;
+  border-bottom: 6px solid #ffd163;
+  border-spacing: 2px;
 }
 
 /*Begin CSS for Splash page.*/
@@ -139,18 +153,17 @@ ul {list-style-type: disc;
   autoplay:default;
 }
 
-/* Begin CSS for About page.*/
+/* Begin CSS for inside pages.*/
 
 
 .content {
 overflow: hidden;
-display: inline;
+display: none;
 position: relative;
 float: left;
-padding-top: 275px;
 width: 1400px;
 height: 1000px;
-margin: 100px;
+margin: auto;
 top:150px;
 }
 
@@ -158,18 +171,15 @@ top:150px;
   float:left;
   position: absolute;
   display: inline-block;
-  padding-top: 275px;
-  margin-top: 225px;
+  padding-top: 0px;
+  margin: auto;
   width: 175px;
-  background-image: url("/assets/images/purplebox.jpg");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: auto;
+  height: 200px;
 }
 
 .subnav a{
   display: block;
-  padding: 10px 0px 10px 0px;
+  padding: 0px 0px 10px 0px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -177,16 +187,30 @@ top:150px;
   color: black;
   text-align: right;
   text-decoration: none;
-  vertical-align: top;
-  margin-top: 0px;
+  position: relative;
+  width: 175px;
+}
+
+.subnav a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
 
 #purplebox {
+  width: 100%;
+  height: auto;
+  float:left;
+  position: absolute;
+  display: inline-block;
+  padding-top: 275px;
+  margin-top: 275px;
+  width: 175px;
+  margin-left: 0px;
   background-image: url("/assets/images/purplebox.jpg");
   background-repeat: no-repeat;
-  background-position: bottom;
-  width: 40px;
-  height: 60px;
+  background-position: left;
+  background-size: auto;
 }
 
 .maincontentbox {
@@ -200,32 +224,34 @@ top:150px;
   padding-left: 100px;
   padding-bottom: 50px;
   width: 900px;
-  height: 650px;
+  height: 700px;
   background-color: white;
   box-shadow: 2px 4px 8px #666666;
   margin-left: 300px;
   top:200px;
 }
 
+/* Begin CSS specific to about page.*/
+
 .imagetextbox {
   float: right;
   display: block;
   width: 25%;
-  padding: 25px 20px 20px 20px;
+  padding: 25px 20px 20px 30px;
 }
 
 .imageinside {
   float: left;
   display: block;
   width: 100%;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
   padding-top: 40px;
 }
 
-/*Begin CSS for Music page.*/
+/*Begin CSS specific to Music page.*/
 
 .Albums {
-padding: 10px 10px 20px 10px;
+padding: 10px 10px 10px 10px;
 align-items: center;
 float: left;
 width: 100%;
@@ -233,11 +259,11 @@ width: 100%;
 
 .photocard {
   box-shadow: 2px 4px 8px #666666;
-  border-radius: 4px;
+  border-radius: 5px;
   float: left;
   display: block;
   width: 25%;
-  margin: 10px;
+  margin: 20px 20px 20px 20px;
 }
 
 table{
@@ -253,13 +279,62 @@ table{
   float: left;
 }
 
-tr :hover {
+.sgname{
+  width: 175px;;
+}
+
+.sgtime{
+  width: 25px;
+}
+
+tr:hover {
   background-color: #f5f5f5;
 }
 .songlist {
-  width: 75%
   float: left;
   padding: 10px 10px 10px 10px;
+}
 
+/*Begin CSS specific to photogallery page.*/
 
+.gallery-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.photocard-wrap {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.photocard {
+  width: 250px;
+  height: 225px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 0;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.photocard > img {
+  width: 100%;
+  height: 100%;
+}
+
+.photocard:hover {
+  width: 250px;
+  height: 250px;
+  z-index: 10;
+  box-shadow: 0 50px 125px rgba(0, 0, 0, 0.4);
 }
