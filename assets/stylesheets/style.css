@@ -5,7 +5,12 @@ header {
   width: 100%;
 }
 
-#Logo {width: 100px; height: 92px; padding-top: 25px; padding-left: 30px;}
+#Logo {
+  width: 100px;
+  height: 92px;
+  padding-top: 25px;
+  padding-left: 30px;
+}
 
 body {
   overflow: hidden;
@@ -351,14 +356,58 @@ tr:hover {
 
 /*For video carousel*/
 
-.video-carousel {
+.video-carousel-wrapper {
   position: relative;
-  margin: 0px 10px;
+  margin: 0 auto;
   width: 80%;
+  float: left;
+  height: auto;
+}
+
+.cir-indicator {
+  display: inline-block;
+  width: 20px;
+  height:20px;
+  border-radius: 50%;
+  border-color: rgba(102, 102, 102);
+  box-shadow: 1px 2px 4px #666666;
+  margin: 0 3px;
+  transition: #ffd163 0.6s ease;
+  cursor: pointer;
+}
+
+.cir-indicator:hover {
+  background-color: #ffd163;
+  position: relative;
+  width: 20px;
+}
+
+.arrow {
+  position: relative;
+  display: inline-block;
+}
+
+.prev {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  padding-left: 0px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -50px;
+  padding-right: 0px;
+  transition: 0.6s ease;
+  user-select: none;
 }
 
 iframe {
-
   margin-left: 50px;
   margin-top: 30px;
   box-shadow: 2px 4px 8px #666666;
@@ -382,26 +431,6 @@ iframe {
   display: inline-block;
   position: relative;
   align: center;
-}
-
-.cir-indicator {
-  display: inline-block;
-  width: 20px;
-  height:20px;
-  border-radius: 50%;
-  border-color: rgba(102, 102, 102);
-  box-shadow: 1px 2px 4px #666666;
-  margin: 0 3px;
-  transition: #ffd163 0.6s ease;
-  cursor: pointer;
-}
-
-.cir-indicator:hover {
-  background-color: #ffd163;
-}
-
-.active {
-  background-color: #ffd163;
 }
 
 .fade {

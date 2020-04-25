@@ -6,9 +6,13 @@
     <script src="./assets/javascripts/video-carousel.js"></script>
     <title>John L. Worley: Gallery - Photos & Videos from events & tours</title>
   </head>
-  <body id="bkgd-gallery" onload="currentVideo(1)">
+
+<!--body tag beings-->
+
+<body id="bkgd-gallery" onload="currentVideo(1)">
     <header>
-      <a href="home.html"> <img id="Logo" src="./assets/images/Logo-Final.jpg"> </a> </a>
+      <a href="home.html"> <img id="Logo" src="./assets/images/Logo-Final.jpg">
+      </a>
     </header>
 <!--Header ends here.-->
     <div class="topnav">
@@ -32,7 +36,7 @@
 <div class="maincontentbox">
   <h3>Videos</h3>
 
-  <div class="video-carousel">
+<!--circle indicator nav of carousel-->
     <div class="indicator hover">
       <button class="cir-indicator" onclick="currentVideo(1)">
       </button>
@@ -41,10 +45,11 @@
       <button class="cir-indicator" onclick="currentVideo(3)">
       </button>
     </div>
-
-    <a class="prev"> <img src="./assets/images/Carousel-left.png" alt="Previous"> </a>
-
+<!--video portion of carousel-->
+<div class="video-carousel-wrapper">
     <div class="video fade">
+      <span class="arrow prev"> <img src="./assets/images/Carousel-left.png"
+        alt="Previous"> </span>
       <iframe width="100%" height="415"
       src="https://www.youtube.com/embed/tk85m2yMxQE">
       </iframe>
@@ -81,10 +86,10 @@
              Worley on June 19, 2014, to improvise to the kinetic sculpture
             “Absolutely” (2012), by artist Alan Rath.</p>
       </div>
-    </div>
-    <a class="next"> <img src="./assets/images/Carousel-right.png" alt="Next"> </a>
-
-
+    <span class="arrow next"> <img src="./assets/images/Carousel-right.png"
+      alt="Next"> </span>
+</div>
+</div>
 </body>
 </html>
 
