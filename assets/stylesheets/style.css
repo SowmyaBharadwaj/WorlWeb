@@ -19,21 +19,21 @@ body {
 /* Begin CSS for background images.*/
 
 #bkgd-about {
-  background-image: url("/assets/images/bkg-about.jpg");
+  background-image: url("../images/bkg-about.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
 }
 
 #bkgd-discog {
-  background-image: url("/assets/images/bkg-discog.jpg");
+  background-image: url("../images/bkg-discog.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
 }
 
 #bkgd-gallery {
-  background-image: url("/assets/images/bkg-gallery.jpg");
+  background-image: url("../images/bkg-gallery.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -70,6 +70,16 @@ h4 {
   font-style: normal;
   font-weight: 600;
   font-size: 14pt;
+  color: black;
+  line-height: normal;
+
+}
+
+h5 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12pt;
   color: black;
   line-height: normal;
 
@@ -169,7 +179,7 @@ top:150px;
 
 .subnav {
   float:left;
-  position: absolute;
+  position: static;
   display: inline-block;
   padding-top: 0px;
   margin: auto;
@@ -179,16 +189,16 @@ top:150px;
 
 .subnav a{
   display: block;
-  padding: 0px 0px 10px 0px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14pt;
+  font-size: 13pt;
+  line-height: 2.2;
   color: black;
   text-align: right;
   text-decoration: none;
-  position: relative;
-  width: 175px;
+  position: static;
+  width: 185px;
 }
 
 .subnav a:hover {
@@ -203,11 +213,11 @@ top:150px;
   float:left;
   position: absolute;
   display: inline-block;
-  padding-top: 275px;
+  padding-top: 75px;
   margin-top: 275px;
   width: 175px;
   margin-left: 0px;
-  background-image: url("/assets/images/purplebox.jpg");
+  background-image: url("../images/purplebox.jpg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: auto;
@@ -257,7 +267,7 @@ float: left;
 width: 100%;
 }
 
-.photocard {
+.album-photo {
   box-shadow: 2px 4px 8px #666666;
   border-radius: 5px;
   float: left;
@@ -305,7 +315,7 @@ tr:hover {
 }
 
 .photocard-wrap {
-  width: 250px;
+  width: 275px;
   height: 250px;
   position: relative;
   margin-bottom: 25px;
@@ -319,8 +329,8 @@ tr:hover {
   position: absolute;
   left: 0;
   right: 0;
-  margin: 0 auto 25px;
-  border-radius: 8px;
+  margin: 0;
+  border-radius: 15px;
   overflow: hidden;
   z-index: 0;
   transition: all .3s ease-in-out;
@@ -333,8 +343,79 @@ tr:hover {
 }
 
 .photocard:hover {
-  width: 250px;
+  width: 275px;
   height: 250px;
   z-index: 10;
   box-shadow: 0 50px 125px rgba(0, 0, 0, 0.4);
+}
+
+/*For video carousel*/
+
+iframe {
+
+  margin-left: 50px;
+  margin-top: 30px;
+  box-shadow: 2px 4px 8px #666666;
+}
+
+.video-carousel {
+  position: relative;
+  margin: 0px 10px;
+  width: 80%;
+}
+.video {
+  position: absolute;
+  width: 100%;
+}
+
+.video-caption {
+  width: inherit;
+  margin-left: 50px;
+  margin-top: 10px;
+  background-color: rgba(102, 102, 102, 0.04);
+  box-shadow: 2px 4px 8px #666666;
+  padding: 20px;
+}
+
+.indicator{
+  display: inline-block;
+  position: relative;
+  align: center;
+}
+
+.cir-indicator {
+  display: inline-block;
+  width: 20px;
+  height:20px;
+  border-radius: 50%;
+  border-color: rgba(102, 102, 102);
+  box-shadow: 1px 2px 4px #666666;
+  margin: 0 3px;
+  transition: #ffd163 0.6s ease;
+  cursor: pointer;
+}
+
+.cir-indicator:hover {
+  background-color: #ffd163;
+}
+
+.active {
+  background-color: #ffd163;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

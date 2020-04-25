@@ -3,27 +3,28 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/style.css">
+    <script src="./assets/javascripts/video-carousel.js"></script>
     <title>John L. Worley: Gallery - Photos & Videos from events & tours</title>
   </head>
   <body id="bkgd-gallery">
     <header>
-      <a href="/home.html"> <img id="Logo" src="./assets/images/Logo-Final.svg"> </a> </a>
+      <a href="home.html"> <img id="Logo" src="./assets/images/Logo-Final.svg"> </a> </a>
     </header>
 <!--Header ends here.-->
     <div class="topnav">
-        <a href="/about.html">About</a>
-        <a href="/discog.html">Music</a>
-        <a href="/gallery.html">Gallery</a>
-        <a href="/shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="discog.html">Music</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="shop.html">Shop</a>
         <a href="calendar.html">Calendar</a>
     </div>
 <!--Top navigation bar ends here.-->
   <div class="content">
     <div id="purplebox">
       <div class="subnav a">
-      <a href="/discog.html"> Photos </a>
+      <a href="gallery.html"> Photos </a>
       <br>
-      <a href="/videos.html"> Videos </a>
+      <a href="videos.html"> Videos </a>
       </div>
     </div>
   </div>
@@ -31,8 +32,43 @@
 <div class="maincontentbox">
   <h3>Videos</h3>
 
+  <div class="video-carousel">
+    <div class="indicator hover"
+      <button class="cir-indicator" onclick="currentVideo(1)">
+      </button>
+      <button class="cir-indicator" onclick="currentVideo(2)">
+      </button>
+      <button class="cir-indicator" onclick="currentVideo(3)">
+      </button>
+    </div>
+    <div class="video fade">
+      <iframe width="100%" height="415"
+      src="https://www.youtube.com/embed/tk85m2yMxQE">
+      </iframe>
+      <div class="video-caption">
+        <h5>Jazz musician John Worley improvises to a kinetic sculpture “Absolutely” by Alan Rath </h5>
+          <p>San Jose Museum of Art and San Jose Jazz invited musician John Worley on June 19, 2014, to improvise to the kinetic sculpture “Absolutely” (2012), by artist Alan Rath.</p></div>
+    </div>
 
+    <div class="video fade">
+      <iframe width="100%" height="415"
+      src="https://www.youtube.com/embed/g8qxqVCpjgg">
+      </iframe>
+      <div class="video-caption">
+        <h5>Jazz musician John Worley improvises to a kinetic sculpture “Absolutely” by Alan Rath </h5>
+          <p>San Jose Museum of Art and San Jose Jazz invited musician John Worley on June 19, 2014, to improvise to the kinetic sculpture “Absolutely” (2012), by artist Alan Rath.</p></div>
+    </div>
 
+    <div class="video fade">
+      <iframe width="100%" height="415"
+      src="https://www.youtube.com/embed/jUdG5JmTa0E">
+      </iframe>
+      <div class="video-caption">
+        <h5>Jazz musician John Worley improvises to a kinetic sculpture “Absolutely” by Alan Rath </h5>
+          <p>San Jose Museum of Art and San Jose Jazz invited musician John Worley on June 19, 2014, to improvise to the kinetic sculpture “Absolutely” (2012), by artist Alan Rath.</p></div>
+    </div>
+
+  </div>
 
 </div>
 
