@@ -6,9 +6,9 @@
     <script src="./assets/javascripts/video-carousel.js"></script>
     <title>John L. Worley: Gallery - Photos & Videos from events & tours</title>
   </head>
-  <body id="bkgd-gallery">
+  <body id="bkgd-gallery" onload="currentVideo(1)">
     <header>
-      <a href="home.html"> <img id="Logo" src="./assets/images/Logo-Final.svg"> </a> </a>
+      <a href="home.html"> <img id="Logo" src="./assets/images/Logo-Final.jpg"> </a> </a>
     </header>
 <!--Header ends here.-->
     <div class="topnav">
@@ -33,7 +33,7 @@
   <h3>Videos</h3>
 
   <div class="video-carousel">
-    <div class="indicator hover"
+    <div class="indicator hover">
       <button class="cir-indicator" onclick="currentVideo(1)">
       </button>
       <button class="cir-indicator" onclick="currentVideo(2)">
@@ -41,13 +41,20 @@
       <button class="cir-indicator" onclick="currentVideo(3)">
       </button>
     </div>
+
+    <a class="prev"> <img src="./assets/images/Carousel-left.png" alt="Previous"> </a>
+
     <div class="video fade">
       <iframe width="100%" height="415"
       src="https://www.youtube.com/embed/tk85m2yMxQE">
       </iframe>
       <div class="video-caption">
-        <h5>Jazz  musician John Worley improvises to a kinetic sculpture “Absolutely” by Alan Rath </h5>
-          <p>San Jose Museum of Art and San Jose Jazz invited musician John Worley on June 19, 2014, to improvise to the kinetic sculpture “Absolutely” (2012), by artist Alan Rath.</p></div>
+        <h5>Jazz  musician John Worley improvises to a kinetic sculpture
+          “Absolutely” by Alan Rath </h5>
+          <p>San Jose Museum of Art and San Jose Jazz invited musician John
+             Worley on June 19, 2014, to improvise to the kinetic sculpture
+              “Absolutely” (2012), by artist Alan Rath.</p>
+      </div>
     </div>
 
     <div class="video fade">
@@ -55,8 +62,12 @@
       src="https://www.youtube.com/embed/g8qxqVCpjgg">
       </iframe>
       <div class="video-caption">
-        <h5>Jazz musician John Worley improvises to a kinetic sculpture “Absolutely” by Alan Rath </h5>
-          <p>San Jose Museum of Art and San Jose Jazz invited musician John Worley on June 19, 2014, to improvise to the kinetic sculpture “Absolutely” (2012), by artist Alan Rath.</p></div>
+        <h5>Jazz musician John Worley improvises to a kinetic sculpture
+           “Absolutely” by Alan Rath </h5>
+          <p>San Jose Museum of Art and San Jose Jazz invited musician John
+             Worley on June 19, 2014, to improvise to the kinetic sculpture
+              “Absolutely” (2012), by artist Alan Rath.</p>
+      </div>
     </div>
 
     <div class="video fade">
@@ -64,13 +75,15 @@
       src="https://www.youtube.com/embed/jUdG5JmTa0E">
       </iframe>
       <div class="video-caption">
-        <h5>Jazz musician John Worley improvises to a kinetic sculpture “Absolutely” by Alan Rath </h5>
-          <p>San Jose Museum of Art and San Jose Jazz invited musician John Worley on June 19, 2014, to improvise to the kinetic sculpture “Absolutely” (2012), by artist Alan Rath.</p></div>
+        <h5>Jazz musician John Worley improvises to a kinetic sculpture
+           “Absolutely” by Alan Rath </h5>
+          <p>San Jose Museum of Art and San Jose Jazz invited musician John
+             Worley on June 19, 2014, to improvise to the kinetic sculpture
+            “Absolutely” (2012), by artist Alan Rath.</p>
+      </div>
     </div>
+    <a class="next"> <img src="./assets/images/Carousel-right.png" alt="Next"> </a>
 
-  </div>
-
-</div>
 
 </body>
 </html>

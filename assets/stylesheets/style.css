@@ -351,6 +351,12 @@ tr:hover {
 
 /*For video carousel*/
 
+.video-carousel {
+  position: relative;
+  margin: 0px 10px;
+  width: 80%;
+}
+
 iframe {
 
   margin-left: 50px;
@@ -358,11 +364,6 @@ iframe {
   box-shadow: 2px 4px 8px #666666;
 }
 
-.video-carousel {
-  position: relative;
-  margin: 0px 10px;
-  width: 80%;
-}
 .video {
   position: absolute;
   width: 100%;
