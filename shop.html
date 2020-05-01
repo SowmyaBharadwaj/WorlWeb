@@ -2,16 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>John L. Worley: Gallery - Photos & Videos from events & tours</title>
+    <title>John L. Worley: Shop records, swag and tickets
+    </title>
     <link rel="stylesheet" type="text/css" href="./assets/stylesheets/style.css">
-    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/lightbox.min.css">
-    <script src="./assets/javascripts/jquery.min.js"></script>
-    <script src="./assets/javascripts/lightbox.min.js"></script>
-  </head>
+    <script src="./assets/javascripts/fp-demo-merch-filter.js"></script>
+    </head>
 
-  <body id="bkgd-gallery">
+  <body id="bkgd-shop">
     <header>
-      <a href="home.html"> <img id="Logo" src="./assets/images/Logo-Final.jpg"> </a> </a>
+      <a href="home.html"> <img id="Logo" src="./assets/images/Logo-Final.jpg">
+      </a>
     </header>
 <!--Header ends here.-->
     <div class="topnav">
@@ -33,13 +33,203 @@
   </div>
 <!--side navigation ends here-->
 <div class="maincontentbox">
-  <h3>Photogallery</h3>
+  <h3>Shop - Records</h3>
+  <section class="filter-section">
+      <!-- Filter buttons -->
+      <div id="btn-container">
+          <button class="btn active-b" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('albums')"> Albums</button>
+          <button class="btn" onclick="filterSelection('singles')"> Singles</button>
+      </div>
+<br>
+<br>
+  <div class="shop-albums">
+    <h4>Albums</h4>
 
-  </div>
+    <div class="shop-alb-list filter-records albums">
+      <p id="album-title"> Naivasha </p>
+      <img class="shop-albphoto" src="./assets/images/album-naivasha-sq.jpg"
+      alt="Shop Album - Naivasha">
+      <div class="shop-links">
+      <a class="buy" href="https://www.amazon.com/Worlview-John-L-Jr-Worley/dp/B01G4BY9B4/ref=sr_1_1?dchild=1&keywords=john+worley+jr&qid=1588323204&s=music&sr=1-1"
+      target="_blank">Buy |</a>
+      <a class="listen" href="./assets/videos/JW-audioclip.m4v" target="_blank">
+        Listen</a>
+      </div>
+    </div>
+
+    <div class="shop-alb-list filter-records albums">
+      <p id="album-title">Worl View</p>
+      <img class="shop-albphoto" src="./assets/images/above-beyond.jpg"
+      alt="Shop Album - Worl View">
+      <div class="shop-links">
+      <a class="buy" href="https://www.amazon.com/Worlview-John-L-Jr-Worley/dp/B01G4BY9B4/ref=sr_1_1?dchild=1&keywords=john+worley+jr&qid=1588323204&s=music&sr=1-1"
+      target="_blank">Buy |</a>
+      <a class="listen" href="./assets/videos/JW-audioclip.m4v" target="_blank">
+        Listen</a>
+      </div>
+    </div>
+
+    <div class="shop-alb-list filter-records albums">
+      <p id="album-title"> Above & Beyond </p>
+      <img class="shop-albphoto" src="./assets/images/worlview.jpg"
+      alt="Shop Album - Above & Beyond">
+      <div class="shop-links">
+      <a class="buy" href="https://www.amazon.com/Worlview-John-L-Jr-Worley/dp/B01G4BY9B4/ref=sr_1_1?dchild=1&keywords=john+worley+jr&qid=1588323204&s=music&sr=1-1"
+      target="_blank"> Buy |</a>
+      <a class="listen" href="./assets/videos/JW-audioclip.m4v" target="_blank">
+        Listen</a>
+      </div>
+    </div>
+
 </div>
 
-</body>
-</html>
+<div class="shop-albums2">
+    <div class="shop-alb-list filter-records albums">
+      <p id="album-title">Jazz Is</p>
+      <img class="shop-albphoto" src="./assets/images/album-jazzis.jpg"
+      alt="Shop Album - Jazz Is">
+      <div class="shop-links">
+      <a class="buy" href="https://www.amazon.com/Worlview-John-L-Jr-Worley/dp/B01G4BY9B4/ref=sr_1_1?dchild=1&keywords=john+worley+jr&qid=1588323204&s=music&sr=1-1"
+      target="_blank">Buy |</a>
+      <a class="listen" href="./assets/videos/JW-audioclip.m4v" target="_blank">
+        Listen</a>
+      </div>
+    </div>
 
-  </body>
+    <div class="shop-alb-list filter-records albums">
+      <p id="album-title"> Lovely Loire </p>
+      <img class="shop-albphoto" src="./assets/images/album-loire.jpg"
+      alt="Shop Album - Lovely Loire">
+      <div class="shop-links">
+      <a class="buy" href="https://www.amazon.com/Worlview-John-L-Jr-Worley/dp/B01G4BY9B4/ref=sr_1_1?dchild=1&keywords=john+worley+jr&qid=1588323204&s=music&sr=1-1"
+      target="_blank"> Buy |</a>
+      <a class="listen" href="./assets/videos/JW-audioclip.m4v" target="_blank">
+        Listen</a>
+      </div>
+    </div>
+
+
+
+  </div> <!--Shop-albums ends here-->
+
+  <div class="shop-singles">
+    <h4>Top Singles</h4>
+    <table class="singles-list">
+      <tr class="filter-records singles">
+        <td class="song-title">1. Worlview</td>
+        <td class="song-time">6:11</td>
+        <td class="song-buy">
+        <a href="https://www.amazon.com/Worlview-John-L-Jr-Worley/dp/B01G4BY9B4/ref=sr_1_1?dchild=1&keywords=john+worley+jr&qid=1588323204&s=music&sr=1-1"
+        target="_blank"> Buy </a>
+        </td>
+        <td class="song-listen"> <a href="./assets/videos/JW-audioclip.m4v"
+        target="_blank">Listen </a>
+      </td>
+      </tr>
+      <tr class="filter-records singles">
+        <td class="song-title">2. Why Wait?</td>
+        <td class="song-time">8:41</td>
+        <td class="song-buy">
+          <a href="https://www.amazon.com/Worlview-John-L-Jr-Worley/dp/B01G4BY9B4/ref=sr_1_1?dchild=1&keywords=john+worley+jr&qid=1588323204&s=music&sr=1-1"
+          target="_blank"> Buy </a>
+        </td>
+        <td class="song-listen"> <a href="./assets/videos/JW-audioclip.m4v"
+        target="_blank">Listen</a>
+        </td>
+      </tr>
+      <tr class="filter-records singles">
+        <td class="song-title">3. Out of the Night Came You</td>
+        <td class="song-time">7:20</td>
+        <td class="song-buy">
+          <a href="https://www.amazon.com/Worlview-John-L-Jr-Worley/dp/B01G4BY9B4/ref=sr_1_1?dchild=1&keywords=john+worley+jr&qid=1588323204&s=music&sr=1-1"
+          target="_blank"> Buy </a>
+        </td>
+        <td class="song-listen"><a href="./assets/videos/JW-audioclip.m4v"
+        target="_blank"> Listen </a>
+      </td>
+      </tr>
+      <tr class="filter-records singles">
+        <td class="song-title">4. Naivasha</td>
+        <td class="song-time">5:28</td>
+        <td class="song-buy">
+          <a href="https://www.amazon.com/Worlview-John-L-Jr-Worley/dp/B01G4BY9B4/ref=sr_1_1?dchild=1&keywords=john+worley+jr&qid=1588323204&s=music&sr=1-1"
+          target="_blank"> Buy </a>
+        </td>
+        <td class="song-listen"> <a href="./assets/videos/JW-audioclip.m4v"
+        target="_blank">Listen </a>
+      </td>
+      </tr>
+      <tr class="filter-records singles">
+        <td class="song-title">5. Pasando El Tiempo</td>
+        <td class="song-time">6:34</td>
+        <td class="song-buy">
+          <a href="https://www.amazon.com/Worlview-John-L-Jr-Worley/dp/B01G4BY9B4/ref=sr_1_1?dchild=1&keywords=john+worley+jr&qid=1588323204&s=music&sr=1-1"
+          target="_blank"> Buy </a>
+        </td>
+        <td class="song-listen"> <a href="./assets/videos/JW-audioclip.m4v"
+        target="_blank">Listen</a>
+      </td>
+      </tr>
+      <tr class="filter-records singles">
+        <td class="song-title">6. Lovely Loire</td>
+        <td class="song-time">4:52</td>
+        <td class="song-buy">
+          <a href="https://www.amazon.com/Worlview-John-L-Jr-Worley/dp/B01G4BY9B4/ref=sr_1_1?dchild=1&keywords=john+worley+jr&qid=1588323204&s=music&sr=1-1"
+          target="_blank"> Buy </a>
+        </td>
+        <td class="song-listen"> <a href="./assets/videos/JW-audioclip.m4v"
+        target="_blank">Listen </a>
+      </td>
+      </tr>
+      <tr class="filter-records singles">
+        <td class="song-title">7. I Remember You</td>
+        <td class="song-time">4:59</td>
+        <td class="song-buy">
+          <a href="https://www.amazon.com/Worlview-John-L-Jr-Worley/dp/B01G4BY9B4/ref=sr_1_1?dchild=1&keywords=john+worley+jr&qid=1588323204&s=music&sr=1-1"
+          target="_blank"> Buy </a>
+        </td>
+        <td class="song-listen"> <a href="./assets/videos/JW-audioclip.m4v"
+        target="_blank">Listen </a>
+      </td>
+      </tr>
+      <tr class="filter-records singles">
+        <td class="song-title">8. Jazz Is</td>
+        <td class="song-time">6:22</td>
+        <td class="song-buy">
+          <a href="https://www.amazon.com/Worlview-John-L-Jr-Worley/dp/B01G4BY9B4/ref=sr_1_1?dchild=1&keywords=john+worley+jr&qid=1588323204&s=music&sr=1-1"
+          target="_blank"> Buy </a>
+        </td>
+        <td class="song-listen"> <a href="./assets/videos/JW-audioclip.m4v"
+        target="_blank">Listen </a>
+      </td>
+      </tr>
+      <tr class="filter-records singles">
+        <td class="song-title">9. Winds of Change</td>
+        <td class="song-time">8:12</td>
+        <td class="song-buy">
+          <a href="https://www.amazon.com/Worlview-John-L-Jr-Worley/dp/B01G4BY9B4/ref=sr_1_1?dchild=1&keywords=john+worley+jr&qid=1588323204&s=music&sr=1-1"
+          target="_blank"> Buy </a>
+        </td>
+        <td class="song-listen"> <a href="./assets/videos/JW-audioclip.m4v"
+        target="_blank">Listen </a>
+      </td>
+      </tr>
+      <tr class="filter-records singles">
+        <td class="song-title">10. Above & Beyond</td>
+        <td class="song-time">7:19</td>
+        <td class="song-buy">
+          <a href="https://www.amazon.com/Worlview-John-L-Jr-Worley/dp/B01G4BY9B4/ref=sr_1_1?dchild=1&keywords=john+worley+jr&qid=1588323204&s=music&sr=1-1"
+          target="_blank"> Buy </a>
+        </td>
+        <td class="song-listen"> <a href="./assets/videos/JW-audioclip.m4v"
+        target="_blank">Listen </a>
+      </td>
+      </tr>
+  </div>
+<script>filterSelection("all");</script>
+  </div>
+</div>
+</section>
+</body>
 </html>
