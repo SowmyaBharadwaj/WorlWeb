@@ -431,8 +431,14 @@ margin-bottom: 20px;
   height: auto;
 }
 
+.indicator{
+  display: inline;
+  position: relative;
+  align-items: center;
+}
+
 .cir-indicator {
-  display: inline-block;
+  display: inline;
   width: 20px;
   height:20px;
   border-radius: 50%;
@@ -441,6 +447,8 @@ margin-bottom: 20px;
   margin: 0 3px;
   transition: #ffd163 0.6s ease;
   cursor: pointer;
+  align-items: center;
+
 }
 
 .cir-indicator:hover {
@@ -450,20 +458,19 @@ margin-bottom: 20px;
 }
 
 .prev {
-  position: static;
-  display: inline-block;
+  position: relative;
+  display: inline;
   float: left;
   top: 50%;
   width: 10%;
-  transform: translateY(-50%);
   padding-left: 0px;
   transition: 0.6s ease;
   user-select: none;
+  z-index: 1;
 }
 
 .next {
-  position: absolute;
-  display: inline-block;
+  display: inline;
   float: right;
   top: 10%;
   width: 20%;
@@ -480,7 +487,8 @@ iframe {
 }
 
 .video {
-  position: absolute;
+  display: inline;
+  float:left;
   width: 100%;
 }
 
@@ -491,12 +499,6 @@ iframe {
   background-color: rgba(102, 102, 102, 0.04);
   box-shadow: 2px 4px 8px #666666;
   padding: 20px;
-}
-
-.indicator{
-  display: inline-block;
-  position: relative;
-  align: center;
 }
 
 .fade {
@@ -823,7 +825,7 @@ float: left;
   font-size: 12pt;
   color: black;
   text-align: left;
-  padding: 20px;
+  padding: 15px;
 }
 
 .eventplace{
@@ -833,7 +835,7 @@ float: left;
   font-size: 13pt;
   color: black;
   text-align: left;
-  padding: 20px;
+  padding: 15px;
   padding-top: 10px;
   padding-bottom: 5px;
 
