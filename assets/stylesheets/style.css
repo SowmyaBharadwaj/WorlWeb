@@ -732,6 +732,85 @@ border-spacing: 2px;
   width: 100%;
 }
 
+/* For shop-merch page*/
+/* For Merch-swag Filter*/
+
+.shop-tickets {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  float: left;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.shop-tickets2 {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  float: left;
+  padding-bottom: 75px;
+  padding-top: 10px;
+  border-bottom: 1.4px dotted #4d3f51;
+  border-spacing: 2px;
+}
+.shop-alb-list{
+  width: 33%;
+  float: left;
+  display: inline;
+}
+
+.shop-albphoto{
+  box-shadow: 2px 4px 8px #666666;
+  border-radius: 5px;
+  float: left;
+  display: inline-block;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.shop-links{
+  position: relative;
+  display: inline;
+  float:right;
+  width: 50%;
+  color: blue;
+  text-decoration: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12pt;
+}
+
+#album-title{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13pt;
+  color: #4d3f51;
+}
+
+.buy {
+  display: inline;
+  text-align: left;
+  text-indent: 20px;
+  width: 50%;
+  left: 0;
+  right: 10%;
+  bottom: 0;
+  text-decoration: none;
+  color: blue;
+}
+
+.listen{
+  display: inline;
+  text-align: right;
+  width: 100%;
+  left: 10px;
+  bottom: 0;
+  text-decoration: none;
+  color: #666666;
+}
 /* Calendar section starts here*/
 
 .calendar-list{
