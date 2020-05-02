@@ -518,15 +518,15 @@ iframe {
 
 /* For Shop Page*/
 
+/* For Records-Albums Filter*/
+
 .shop-albums {
   width: 100%;
   height: auto;
   display: inline-block;
   float: left;
   padding-bottom: 15px;
-  padding-top: 30px;
-  border-top: 1px solid #4d3f51;
-  border-spacing: 2px;
+  padding-top: 10px;
 }
 
 .shop-albums2 {
@@ -535,7 +535,7 @@ iframe {
   display: inline-block;
   float: left;
   padding-bottom: 75px;
-  padding-top: 20px;
+  padding-top: 10px;
   border-bottom: 1.4px dotted #4d3f51;
   border-spacing: 2px;
 }
@@ -597,12 +597,16 @@ iframe {
   color: #666666;
 }
 
+/* For Records-Singles Filter*/
+
 .shop-singles{
 width: 100%;
 display: block;
 float: left;
-margin-top: 10px;
-padding-top: 20px;
+margin-top: 0px;
+padding-bottom: 50px;
+border-bottom: 1.4px dotted #4d3f51;
+border-spacing: 2px;
 }
 
 .singles-list{
@@ -675,11 +679,21 @@ border-bottom: 4px solid #ffd163;
 border-spacing: 2px;
 }
 
-/*Begin Filter section css*/
+/*Begin Filter Buttons section css*/
 
 /* The "show" class is added to the filtered elements */
+.filter-records{
+  display: none;/* This is really imp for filtered items to hide unfiltered items*/
+  margin-top: 40px;
+}
+
 .show {
     display: block;
+}
+
+#btn-container{
+  border-bottom: 1px solid #4d3f51;
+  border-spacing: 2px;
 }
 
 .btn {
@@ -695,6 +709,7 @@ border-spacing: 2px;
     line-height: 1.8;
     margin-right: 10px;
     margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 /* Add a light grey background on mouse-over */
@@ -712,4 +727,7 @@ border-spacing: 2px;
   display: inline-block;
   float: left;
   right: 0;
+  width: 100%;
 }
+
+/* Calendar section starts here*/

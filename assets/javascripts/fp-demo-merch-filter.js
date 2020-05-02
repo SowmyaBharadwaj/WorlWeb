@@ -1,6 +1,6 @@
 function filterSelection(c) {
     var x, i;
-    x = document.getElementsByClassName("filter-div");
+    x = document.getElementsByClassName("filter-records");
     highlightActiveControlBtn();
     if (c == "all") c = "";
     // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
