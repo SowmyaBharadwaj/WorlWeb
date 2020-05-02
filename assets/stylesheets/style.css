@@ -731,3 +731,137 @@ border-spacing: 2px;
 }
 
 /* Calendar section starts here*/
+
+.calendar-list{
+display: inline;
+float: left;
+width: 100%;
+}
+
+.calendar-event{
+display: inline;
+float: left;
+width: 400px;
+height: 300px;
+margin-right: 35px;
+margin-bottom: 35px;
+}
+
+.when{
+width: 150px;
+height: 250px;
+background-color: #251f1d;
+box-shadow: 4px 8px 14px #f1f1f1;
+border-radius: 1px;
+margin-top: 50px;
+padding: 5px;
+padding-left: 10px;
+display: inline-block;
+float: left;
+}
+
+.eventday{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12pt;
+  color: #ffd163;
+  text-indent: 10px;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.eventdate{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48pt;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.eventmonth{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18pt;
+  color: white;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.eventtime{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16pt;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+
+}
+
+.where{
+  width: 200px;
+  height: 250px;
+  background-color: #f1f1f1;
+  box-shadow: 4px 8px 10px #666666;
+  border-radius: 1px;
+  margin-top: 50px;
+  padding: 5px;
+  padding-left: 10px;
+  display: inline-block;
+  float: left;
+  margin-left: 10px;
+}
+
+.eventname{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12pt;
+  color: black;
+  text-align: left;
+  padding: 20px;
+}
+
+.eventplace{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13pt;
+  color: black;
+  text-align: left;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+
+
+}
+
+.eventaddress{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 12pt;
+  color: black;
+  text-align: left;
+  padding: 0px 20px;
+}
+
+.eventtickets{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12pt;
+  color: blue;
+  text-align: left;
+  padding: 20px 20px;
+  bottom: 0;
+}
+
+.eventtickets a{
+  color: blue;
+  text-align: left;
+  text-decoration: none;
