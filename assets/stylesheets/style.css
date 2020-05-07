@@ -1,7 +1,7 @@
 header {
   padding-top: 20px;
   overflow: hidden;
-  position: fixed;
+  position: sticky;
   width: 100%;
 }
 
@@ -18,7 +18,7 @@ body {
   position: relative;
   background-color: white;
   width: 1400px; height: 1200px;
-  margin: 25px 100px 0px 100px;
+  margin: 25px 100px 25px 75px;
 }
 
 /* Begin CSS for background images.*/
@@ -181,15 +181,22 @@ a:visited {
   font-weight: 500;
   font-size: 15pt;
   text-align: center;
-  padding: 25px;
+  padding-left: 0px;
+  padding-top: 20px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  margin-right: 20px;
+  margin-left: 25px;
   text-decoration: none;
+  text-align: center;
 }
 
 .topnav a:hover {
   background-color: white;
   color: black;
-  border-bottom: 6px solid #ffd163;
+  border-bottom: 5px solid #ffd163;
   border-spacing: 2px;
+  border-spacing: 25px;
 }
 
 /*Begin CSS for Splash page.*/
@@ -216,7 +223,9 @@ float: left;
 width: 1400px;
 height: 1000px;
 margin: auto;
-top:150px;
+top:50px;
+background-color: white;
+opacity: .92;
 }
 
 .subnav {
@@ -240,7 +249,7 @@ top:150px;
   text-align: right;
   text-decoration: none;
   position: static;
-  width: 185px;
+  width: 175px;
 }
 
 .subnav a:hover {
@@ -256,7 +265,7 @@ top:150px;
   position: absolute;
   display: inline-block;
   padding-top: 75px;
-  margin-top: 275px;
+  margin-top: 125px;
   width: 175px;
   margin-left: 0px;
   background-image: url("../images/purplebox.jpg");
@@ -271,7 +280,7 @@ top:150px;
   float: left;
   vertical-align: top;
   position: relative;
-  margin: 100px 100px 100px 100px;
+  margin: 100px 100px 50px 50px;
   padding: 50px;
   padding-left: 100px;
   padding-bottom: 50px;
@@ -280,8 +289,8 @@ top:150px;
   background-color: white;
   opacity: .92;
   box-shadow: 2px 4px 8px #666666;
-  margin-left: 300px;
-  top:200px;
+  margin-left: 250px;
+  top:50px;
 }
 
 /* Begin CSS specific to about page.*/
@@ -435,6 +444,7 @@ margin-bottom: 20px;
   display: inline;
   position: relative;
   align-items: center;
+
 }
 
 .cir-indicator {
@@ -733,17 +743,21 @@ border-spacing: 2px;
 }
 
 /* For shop-merch page*/
-/* For Merch-swag Filter*/
+/* For Merch-Tickets Filter*/
+
+.filter-merch{
+  display: none;/* This is really imp for filtered items to hide unfiltered items*/
+  margin-top: 40px;
+}
 
 .shop-tickets {
   width: 100%;
   height: auto;
   display: inline-block;
   float: left;
-  padding-bottom: 15px;
-  padding-top: 10px;
-}
 
+}
+/*
 .shop-tickets2 {
   width: 100%;
   height: auto;
@@ -754,63 +768,242 @@ border-spacing: 2px;
   border-bottom: 1.4px dotted #4d3f51;
   border-spacing: 2px;
 }
-.shop-alb-list{
-  width: 33%;
-  float: left;
-  display: inline;
-}
 
-.shop-albphoto{
-  box-shadow: 2px 4px 8px #666666;
-  border-radius: 5px;
+.shop-tkt-list{
+  width: 100%;
   float: left;
   display: inline-block;
-  width: 80%;
-  margin-bottom: 20px;
+}
+*/
+
+.ticket-stub{
+  display: inline-block;
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-left: 25px;
+  top: 0;
 }
 
-.shop-links{
-  position: relative;
-  display: inline;
-  float:right;
-  width: 50%;
+.ticket-stub-line{
+  display: inline-block;
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+  border-bottom: 1.4px dotted #4d3f51;
+  border-spacing: 2px;
+  padding-bottom: 75px;
+  padding-left: 25px;
+}
+
+.tkt-sched{
+  display: inline-block;
+  float: left;
+  width: 15%;
+  height: 180px;
+  background-color: #ddd;
+  text-align: left;
+  padding: 20px;
+  padding-left: 35px;
+  padding-right: 10px;
+  box-shadow: 2px 4px 8px #666666;
+  border-radius: 5px;
+}
+
+.tkt-details{
+    background-color:#ddd;
+    width: 20%;
+    padding: 20px;
+    height: 180px;
+    text-align: left;
+    display: inline-block;
+    float: left;
+    box-shadow: 2px 4px 8px #666666;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.shop-tktphoto{
+  float: left;
+  display: inline-block;
+  width: 30%;
+  height: 220px;
+  box-shadow: 2px 4px 8px #666666;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.shoptkt-links{
   color: blue;
   text-decoration: none;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 12pt;
+  font-size: 11pt;
+  line-height: 1.4;
 }
 
-#album-title{
+#tkt-name{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14pt;
+  line-height: 1.5;
+  padding: none;
+}
+
+#tkt-day{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14pt;
+  line-height: 1.4;
+}
+
+#tkt-date{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18pt;
+  line-height: 0;
+}
+
+#show-time{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11pt;
+  line-height: 0.8;
+}
+
+#show-title{
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 13pt;
-  color: #4d3f51;
+  color: black;
 }
 
-.buy {
-  display: inline;
-  text-align: left;
-  text-indent: 20px;
-  width: 50%;
-  left: 0;
-  right: 10%;
-  bottom: 0;
-  text-decoration: none;
+#show-venue{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11pt;
+  color: black;
+  line-height: 1.6;
+}
+
+.buytkt {
   color: blue;
+  text-decoration: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11pt;
+  line-height: 6.0;
 }
 
-.listen{
-  display: inline;
-  text-align: right;
+/* Swag section begins here*/
+
+.shop-swag{
+  display: inline-block;
+  float: left;
   width: 100%;
-  left: 10px;
-  bottom: 0;
-  text-decoration: none;
-  color: #666666;
 }
+
+.swag-list{
+  display: inline-flex;
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+
+.swag-list-line{
+  display: inline-flex;
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  border-bottom: 1.4px dotted #4d3f51;
+  border-spacing: 2px;
+}
+
+.swag-item{
+  display: inline-block;
+  float: left;
+  width: 100%;
+  margin-bottom: 25px;
+  padding-right: 0px;
+
+}
+
+.prod-details{
+    width: 30%;
+    height: 180px;
+    text-align: left;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}
+
+.prod-photo{
+  float: left;
+  display: inline-block;
+  width: 50%;
+  height: 220px;
+  box-shadow: 2px 4px 8px #666666;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.prod-links{
+  color: blue;
+  text-decoration: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11pt;
+  line-height: 1.4;
+}
+
+#prod-title{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13pt;
+  color: black;
+  line-height: 1.4;
+}
+
+#prod-size{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11pt;
+  color: black;
+  line-height: 1.6;
+}
+
+#prod-price{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11pt;
+  color: black;
+  line-height: 1.6;
+}
+
+.buytkt {
+  color: blue;
+  text-decoration: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11pt;
+  line-height: 6.0;
+}
+
 /* Calendar section starts here*/
 
 .calendar-list{
@@ -917,8 +1110,6 @@ float: left;
   padding: 15px;
   padding-top: 10px;
   padding-bottom: 5px;
-
-
 }
 
 .eventaddress{
