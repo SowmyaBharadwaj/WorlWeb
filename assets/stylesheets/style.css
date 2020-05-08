@@ -214,18 +214,16 @@ a:visited {
 
 /* Begin CSS for inside pages.*/
 
-
 .content {
-overflow: hidden;
-display: none;
-position: relative;
-float: left;
-width: 1400px;
-height: 1000px;
-margin: auto;
-top:50px;
-background-color: white;
-opacity: .92;
+  overflow: hidden;
+  display: none;
+  position: relative;
+  float: left;
+  width: 1400px;
+  height: 1000px;
+  margin: auto;
+  top:50px;
+  background-color: white;
 }
 
 .subnav {
@@ -745,11 +743,6 @@ border-spacing: 2px;
 /* For shop-merch page*/
 /* For Merch-Tickets Filter*/
 
-.filter-merch{
-  display: none;/* This is really imp for filtered items to hide unfiltered items*/
-  margin-top: 40px;
-}
-
 .shop-tickets {
   width: 100%;
   height: auto;
@@ -1002,6 +995,15 @@ border-spacing: 2px;
   font-weight: 600;
   font-size: 11pt;
   line-height: 6.0;
+}
+
+.filter-merch{
+  display: none;/* This is really imp for filtered items to hide unfiltered items*/
+  margin-top: 40px;
+}
+
+.show {
+    display: block;
 }
 
 /* Calendar section starts here*/
