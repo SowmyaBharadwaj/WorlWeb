@@ -773,8 +773,7 @@ border-spacing: 2px;
   display: inline-block;
   float: left;
   width: 100%;
-  margin-bottom: 30px;
-  padding-left: 25px;
+  margin-bottom: 20px;
   top: 0;
 }
 
@@ -786,7 +785,7 @@ border-spacing: 2px;
   border-bottom: 1.4px dotted #4d3f51;
   border-spacing: 2px;
   padding-bottom: 75px;
-  padding-left: 25px;
+
 }
 
 .tkt-sched{
@@ -841,8 +840,9 @@ border-spacing: 2px;
   font-style: normal;
   font-weight: 600;
   font-size: 14pt;
-  line-height: 1.5;
-  padding: none;
+  line-height: 1.8;
+  color: #4d3f51;
+  padding-top: 25px;
 }
 
 #tkt-day{
