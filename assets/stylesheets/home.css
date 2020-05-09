@@ -417,8 +417,8 @@ line-height:1.8;
 .when{
   width: 30%;
   background-color: #251f1d;
-  box-shadow: 4px 8px 14px #f1f1f1;
-  border-radius: 5px 0px 0px 5px;
+  box-shadow: 4px 8px 10px #666666;
+  border-radius: 0px 5px 5px 0px;
   margin-top: 10px;
   padding: 5px;
   padding-left: 10px;

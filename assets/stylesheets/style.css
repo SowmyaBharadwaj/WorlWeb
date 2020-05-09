@@ -153,7 +153,7 @@ a:visited {
   line-height: 1.6;
 }
 
-#highlight {
+.highlight {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -197,14 +197,6 @@ a:visited {
   border-bottom: 5px solid #ffd163;
   border-spacing: 2px;
   border-spacing: 25px;
-}
-
-/*Begin CSS for Splash page.*/
-
-.splash {
-  padding-top: 250px;
-  width: 1200px;
-  /*height: 80%*/
 }
 
 .videocontrols
@@ -271,6 +263,8 @@ a:visited {
   background-position: left;
   background-size: auto;
 }
+
+
 
 .maincontentbox {
   overflow: auto;
@@ -603,7 +597,7 @@ margin-bottom: 20px;
   font-size: 12pt;
 }
 
-#album-title{
+.album-title{
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
