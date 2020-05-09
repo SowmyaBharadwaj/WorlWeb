@@ -308,7 +308,7 @@ a:visited {
   padding-top: 40px;
 }
 
-/*Begin CSS for Music page*/
+/*Begin CSS for Music-discog page*/
 
 .Albums {
   padding: 10px 10px 10px 10px;
@@ -408,11 +408,12 @@ margin-bottom: 20px;
   left: 0;
   right: 0;
   margin: 0;
-  border-radius: 15px;
+  border-radius: 8px;
   overflow: hidden;
   z-index: 0;
   transition: all .3s ease-in-out;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  object-fit: scale-down;
 }
 
 .photocard > img {
@@ -428,8 +429,53 @@ margin-bottom: 20px;
 }
 
 /*For video carousel*/
+.video-car-wrap{
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
 
-.video-carousel-wrapper {
+/*For indicator buttons */
+
+.indicator{
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 25%;
+  height: 10%;
+  bottom: 0px;
+  top:15px;
+  background-color: ;
+  padding: 10px;
+}
+
+.dots{
+  display: inline;
+  float: left;
+  width: 20px;
+  height:20px;
+  border-radius: 50%;
+  background-color: #ddd;
+  border-color: rgba(102, 102, 102);
+  box-shadow: 1px 2px 4px #666666;
+  margin: 0 8px;
+  transition: #ffd163 0.6s ease;
+  cursor: pointer;
+  top:100px;
+
+}
+
+.dots:hover {
+  background-color: #ffd163;
+  border: none;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),
+}
+
+/*For video slideshow */
+
+.video-slider{
   position: relative;
   display: inline-block;
   margin: 0 auto;
@@ -438,77 +484,59 @@ margin-bottom: 20px;
   height: auto;
 }
 
-.indicator{
-  display: inline;
-  position: relative;
-  align-items: center;
-
-}
-
-.cir-indicator {
-  display: inline;
-  width: 20px;
-  height:20px;
-  border-radius: 50%;
-  border-color: rgba(102, 102, 102);
-  box-shadow: 1px 2px 4px #666666;
-  margin: 0 3px;
-  transition: #ffd163 0.6s ease;
-  cursor: pointer;
-  align-items: center;
-
-}
-
-.cir-indicator:hover {
-  background-color: #ffd163;
-  position: relative;
-  width: 20px;
-}
-
-.prev {
-  position: relative;
-  display: inline;
-  float: left;
-  top: 50%;
-  width: 10%;
-  padding-left: 0px;
-  transition: 0.6s ease;
-  user-select: none;
-  z-index: 1;
-}
-
-.next {
-  display: inline;
-  float: right;
-  top: 10%;
-  width: 20%;
-  margin-top: -50px;
-  padding-right: 0px;
-  transition: 0.6s ease;
-  user-select: none;
-}
-
-iframe {
-  margin-left: 50px;
-  margin-top: 30px;
-  box-shadow: 2px 4px 8px #666666;
-}
-
-.video {
-  display: inline;
-  float:left;
+.video-item {
+  position: absolute;
+  display: inline-inline-block;
   width: 100%;
+
 }
 
-.video-caption {
-  width: inherit;
-  margin-left: 50px;
-  margin-top: 10px;
-  background-color: rgba(102, 102, 102, 0.04);
-  box-shadow: 2px 4px 8px #666666;
-  padding: 20px;
+.video-caption-wrap{
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  width: 80%;
+  float: left;
+  height: auto;
+  bottom: 0;
 }
 
+.video-caption{
+ position: absolute; /* Position the background text */
+ bottom: 0;
+ background: rgba(77, 63, 81, 0.9); /* Black background with 0.5 opacity */
+ color: white; /* Grey text */
+ width: 100%; /* Full width */
+ padding-left: 20px; /* Some padding */
+}
+
+/*For next, prev arrows*/
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 175px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+.prev:hover, .next:hover {
+    background-color: rgba(255,209,99,0.8);
+  }
+
+/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -526,9 +554,7 @@ iframe {
   to {opacity: 1}
 }
 
-/* For Shop Page*/
-
-/* For Records-Albums Filter*/
+/*Shop section begins*/
 
 .shop-albums {
   width: 100%;
@@ -835,7 +861,7 @@ border-spacing: 2px;
   line-height: 1.4;
 }
 
-#tkt-name{
+.tkt-name{
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -845,7 +871,7 @@ border-spacing: 2px;
   padding-top: 25px;
 }
 
-#tkt-day{
+.tkt-day{
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -853,7 +879,7 @@ border-spacing: 2px;
   line-height: 1.4;
 }
 
-#tkt-date{
+.tkt-date{
   font-family: Open Sans;
   font-style: normal;
   font-weight: 800;
@@ -861,7 +887,7 @@ border-spacing: 2px;
   line-height: 0;
 }
 
-#show-time{
+.show-time{
   font-family: Open Sans;
   font-style: normal;
   font-weight: 300;
@@ -869,7 +895,7 @@ border-spacing: 2px;
   line-height: 0.8;
 }
 
-#show-title{
+.show-title{
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -877,7 +903,7 @@ border-spacing: 2px;
   color: black;
 }
 
-#show-venue{
+.show-venue{
   font-family: Open Sans;
   font-style: normal;
   font-weight: 400;
@@ -960,7 +986,7 @@ border-spacing: 2px;
   line-height: 1.4;
 }
 
-#prod-title{
+.prod-title{
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -969,7 +995,7 @@ border-spacing: 2px;
   line-height: 1.4;
 }
 
-#prod-size{
+.prod-size{
   font-family: Open Sans;
   font-style: normal;
   font-weight: 400;
@@ -978,7 +1004,7 @@ border-spacing: 2px;
   line-height: 1.6;
 }
 
-#prod-price{
+.prod-price{
   font-family: Open Sans;
   font-style: normal;
   font-weight: 400;
@@ -1028,7 +1054,7 @@ width: 150px;
 height: 250px;
 background-color: #251f1d;
 box-shadow: 4px 8px 14px #f1f1f1;
-border-radius: 1px;
+border-radius: 5px 0px 0px 5px;
 margin-top: 50px;
 padding: 5px;
 padding-left: 10px;
@@ -1083,7 +1109,7 @@ float: left;
   height: 250px;
   background-color: #f1f1f1;
   box-shadow: 4px 8px 10px #666666;
-  border-radius: 1px;
+  border-radius: 0px 5px 5px 0px;
   margin-top: 50px;
   padding: 5px;
   padding-left: 10px;
@@ -1139,3 +1165,60 @@ float: left;
   color: blue;
   text-align: left;
   text-decoration: none;
+}
+
+  /*For promos carousel*/
+
+  .promo-car-wrap {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*For indicator buttons see video pg carousel*/
+
+
+
+  /*For promos slideshow */
+
+  .promo-slider{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    float: left;
+    height: auto;
+  }
+
+  .promo-item {
+    position: absolute;
+    display: inline-inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    left: 18%;
+  }
+
+  .promo-img{
+    margin: 0 auto;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

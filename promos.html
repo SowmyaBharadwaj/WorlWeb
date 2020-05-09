@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/style.css">
+    <script src="./assets/javascripts/promos-carousel.js"></script>
+    <title>John L. Worley: Gallery - Photos & Videos from events & tours</title>
+  </head>
+
+<!--body tag begins-->
+
+<body id="bkgd-videos" onload="currentPromo(1)">
+    <header>
+      <a href="home.html"> <img id="Logo" src="./assets/images/Logo-Final.jpg">
+      </a>
+    </header>
+<!--Header ends here-->
+    <div class="topnav">
+        <a href="about.html">About</a>
+        <a href="discog.html">Music</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="shop.html">Shop</a>
+        <a href="calendar.html">Calendar</a>
+    </div>
+<!--Top navigation bar ends here-->
+<div class="content">
+    <div id="purplebox">
+    <div class="subnav a">
+      <a href="calendar.html"> Now Playing</a>
+        <br>
+      <a href="promos.html">  Tours + <br>Promos </a>
+    </div>
+    </div>
+</div>
+<!--side navigation ends here-->
+<div class="maincontentbox">
+  <h3>Upcoming Tours & Promos</h3>
+
+<!--indicator buttons-->
+<div class="promo-car-wrap">
+
+  <div class="indicator hover">
+      <div class="dots" onclick="currentPromo(1)">
+      </div>
+      <div class="dots" onclick="currentPromo(2)">
+      </div>
+      <div class="dots" onclick="currentPromo(3)">
+      </div>
+  </div>
+
+<!--videoslideshow carousel-->
+
+  <div class="promo-slider">
+      <div class="promo-item fade">
+            <img class="promo-img" src="./assets/images/1promo.jpg" alt="">
+      </div>
+      <div class="promo-item fade">
+            <img class="promo-img" src="./assets/images/2promo.jpg">
+      </div>
+      <div class="promo-item fade">
+            <img class="promo-img" src="./assets/images/3promo.jpg">
+      </div>
+  </div>
+
+</div>
+
+
+</div>
+
+</body>
+</html>

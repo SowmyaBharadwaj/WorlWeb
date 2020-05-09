@@ -7,14 +7,14 @@
     <title>John L. Worley: Gallery - Photos & Videos from events & tours</title>
   </head>
 
-<!--body tag beings-->
+<!--body tag begins-->
 
 <body id="bkgd-videos" onload="currentVideo(1)">
     <header>
       <a href="home.html"> <img id="Logo" src="./assets/images/Logo-Final.jpg">
       </a>
     </header>
-<!--Header ends here.-->
+<!--Header ends here-->
     <div class="topnav">
         <a href="about.html">About</a>
         <a href="discog.html">Music</a>
@@ -22,7 +22,7 @@
         <a href="shop.html">Shop</a>
         <a href="calendar.html">Calendar</a>
     </div>
-<!--Top navigation bar ends here.-->
+<!--Top navigation bar ends here-->
   <div class="content">
     <div id="purplebox">
       <div class="subnav a">
@@ -36,64 +36,68 @@
 <div class="maincontentbox">
   <h3>Videos</h3>
 
-<!--circle indicator nav of carousel-->
-<div class="video-carousel-wrapper">
-    <div class="indicator hover">
-      <button class="cir-indicator" onclick="currentVideo(1)">
-      </button>
-      <button class="cir-indicator" onclick="currentVideo(2)">
-      </button>
-      <button class="cir-indicator" onclick="currentVideo(3)">
-      </button>
-    </div>
-<!--video portion of carousel-->
-<div class="prev"> <img src="./assets/images/Carousel-left.png"
-    alt="Previous"> </div>
-    <div class="video fade">
-      <iframe width="100%" height="415"
-      src="https://www.youtube.com/embed/tk85m2yMxQE">
-      </iframe>
-      <div class="video-caption">
-        <h5>Jazz  musician John Worley improvises to a kinetic sculpture
-          “Absolutely” by Alan Rath </h5>
-          <p>San Jose Museum of Art and San Jose Jazz invited musician John
-             Worley on June 19, 2014, to improvise to the kinetic sculpture
-              “Absolutely” (2012), by artist Alan Rath.</p>
-      </div>
-    </div>
+<!--indicator buttons-->
+<div class="video-car-wrap">
 
-    <div class="video fade">
-      <iframe width="100%" height="415"
-      src="https://www.youtube.com/embed/g8qxqVCpjgg">
-      </iframe>
-      <div class="video-caption">
-        <h5>Jazz musician John Worley improvises to a kinetic sculpture
-           “Absolutely” by Alan Rath </h5>
-          <p>San Jose Museum of Art and San Jose Jazz invited musician John
-             Worley on June 19, 2014, to improvise to the kinetic sculpture
-              “Absolutely” (2012), by artist Alan Rath.</p>
+  <div class="indicator hover">
+      <div class="dots" onclick="currentVideo(1)">
       </div>
-    </div>
+      <div class="dots" onclick="currentVideo(2)">
+      </div>
+      <div class="dots" onclick="currentVideo(3)">
+      </div>
+  </div>
 
-    <div class="video fade">
-      <iframe width="100%" height="415"
-      src="https://www.youtube.com/embed/jUdG5JmTa0E">
-      </iframe>
-      <div class="video-caption">
-        <h5>Jazz musician John Worley improvises to a kinetic sculpture
-           “Absolutely” by Alan Rath </h5>
-          <p>San Jose Museum of Art and San Jose Jazz invited musician John
-             Worley on June 19, 2014, to improvise to the kinetic sculpture
+<!--videoslideshow carousel-->
+
+  <div class="video-slider">
+      <div class="video-item fade">
+            <iframe width="100%" height="415"
+            src="https://www.youtube.com/embed/tk85m2yMxQE">
+            </iframe>
+          <div class="video-caption-wrap">
+            <div class="video-caption">
+            <p>San Jose Museum of Art and San Jose Jazz invited musician John
+            Worley on June 19, 2014, to improvise to the kinetic sculpture
             “Absolutely” (2012), by artist Alan Rath.</p>
-
+            </div>
+          </div>
       </div>
-      <div class="next"> <img src="./assets/images/Carousel-right.png"
-        alt="Next"> </div>
+      <div class="video-item fade">
+            <iframe width="100%" height="415"
+            src="https://www.youtube.com/embed/g8qxqVCpjgg">
+            </iframe>
+          <div class="video-caption-wrap">
+            <div class="video-caption">
+            <p>Performance by John Worley at the concert “Out of the Blues
+            - The Gift of Song" on Jan 27/28 2018 at the
+            Eastside College Preparatory School Performing Arts Center
+            in East Palo Alto, CA. </p>
+            </div>
+          </div>
+      </div>
+      <div class="video-item fade">
+            <iframe width="100%" height="415"
+            src="https://www.youtube.com/embed/jUdG5JmTa0E">
+            </iframe>
+
+              <div class="video-caption-wrap">
+                <div class="video-caption">
+                      <p>John Worley & the Mo-Chi Sextet replicate one of the
+                      most famous LPs in jazz history: Miles Davis' Kind of Blue
+                      at the 2014 San Jose Jazz Festival.
+                      </p>
+                </div>
+              </div>
+          </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
 
 </div>
+
+
 </div>
+
 </body>
-</html>
-
-  </body>
 </html>

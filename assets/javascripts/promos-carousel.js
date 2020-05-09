@@ -1,16 +1,16 @@
 var videoIndex = 1;
 
-function plusVideos(n) {
+function plusPromo(n) {
   showVideo(videoIndex += n);
 }
 
-function currentVideo(n) {
+function currentPromo(n) {
   showVideo(videoIndex = n);
 }
 
 function showVideo(n) {
   var i;
-  var videos = document.getElementsByClassName("video-item");
+  var videos = document.getElementsByClassName("promo-item");
   var cir_indicator = document.getElementsByClassName("dots");
   if (n > videos.length) {videoIndex = 1}
   if (n < 1) {videoIndex = videos.length}
