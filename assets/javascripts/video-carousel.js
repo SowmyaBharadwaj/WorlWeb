@@ -1,6 +1,6 @@
 var videoIndex = 1;
 
-function plusVideos(n) {
+function plusVideo(n) {
   showVideo(videoIndex += n);
 }
 
