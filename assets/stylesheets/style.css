@@ -191,6 +191,14 @@ a:visited {
   text-align: center;
 }
 
+.topnav a:active {
+  background-color: white;
+  color: black;
+  border-bottom: 5px solid #ffd163;
+  border-spacing: 2px;
+  border-spacing: 25px;
+}
+
 .topnav a:hover {
   background-color: white;
   color: black;
@@ -973,7 +981,7 @@ border-spacing: 2px;
   box-shadow: 2px 4px 8px #666666;
   border-radius: 5px;
   margin-right: 10px;
-  
+
 }
 
 .prod-links{
