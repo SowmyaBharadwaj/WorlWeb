@@ -1,1265 +1,1285 @@
-header {
-  padding-top: 20px;
-  overflow: hidden;
-  position: sticky;
-  width: 100%;
-}
-
-#Logo {
-  width: 100px;
-  height: 92px;
-  padding-top: 15px;
-  padding-left: 30px;
-}
-
-body {
-  overflow: hidden;
-  float: left;
-  position: relative;
-  background-color: white;
-  width: 1400px; height: 1200px;
-  margin: 25px 100px 25px 75px;
-}
-
-/* Begin CSS for background images.*/
-
-#bkgd-home {
-  background-image: url("../images/bkg-home.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-}
-
-#bkgd-about {
-  background-image: url("../images/bkg-about.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-}
-
-#bkgd-discog {
-  background-image: url("../images/bkg-discog.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-}
-
-#bkgd-gallery {
-  background-image: url("../images/bkg-gallery.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-}
-
-#bkgd-videos {
-  background-image: url("../images/bkg-videos.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-}
-
-#bkgd-shop {
-  background-image: url("../images/bkg-shop.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-}
-
-#bkgd-calendar {
-  background-image: url("../images/bkg-calendar.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-}
-
-/*Begin CSS for text in website.*/
-
-h1 {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18pt;
-}
-
-h2 {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16pt;
-}
-
-h3 {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14pt;
-  color: #666666;
-  line-height: normal;
-}
-
-h4 {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14pt;
-  color: black;
-  line-height: normal;
-
-}
-
-h5 {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12pt;
-  color: black;
-  line-height: normal;
-
-}
-
-p {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11pt;
-  line-height: 1.8;
-}
-
-ul {list-style-type: disc;
-   list-style-position: outside;
-   padding: 20px;
-   font-family: Open Sans;
-   font-style: normal;
-   font-weight: 400;
-   font-size: 11pt;
-   line-height: 1.8;
-}
-
-/*a:link{
-text-decoration: none;
-color: blue;
-}
-
-a:visited {
-  color: #4d3f51;
-  text-decoration: none;
-}*/
-
-.caption {
-  font-family: Open Sans;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 11pt;
-  line-height: 1.6;
-}
-
-.highlight {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11pt;
-  line-height: 1.8;
-}
-
-/*Begin CSS for Top navigation bar.*/
-
-.topnav {
-  padding-top: 15px;
-  overflow: hidden;
-  position: fixed;
-  top: 150px;
-  width: 50%;
-  float:left;
-  overflow: auto;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15pt;
-  text-align: center;
-  padding-left: 0px;
-  padding-top: 20px;
-  padding-right: 0px;
-  padding-bottom: 5px;
-  margin-right: 20px;
-  margin-left: 25px;
-  text-decoration: none;
-  text-align: center;
-}
-
-.topnav a:active {
-  background-color: white;
-  color: black;
-  border-bottom: 5px solid #ffd163;
-  border-spacing: 2px;
-  border-spacing: 25px;
-}
-
-.topnav a:hover {
-  background-color: white;
-  color: black;
-  border-bottom: 5px solid #ffd163;
-  border-spacing: 2px;
-  border-spacing: 25px;
-}
-
-.videocontrols
-  controlslist: nodownload;
-  autoplay:default;
-}
-
-/* Begin CSS for inside pages.*/
-
-.content {
-  overflow: hidden;
-  display: none;
-  position: relative;
-  float: left;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  top: 50px;
-  background-color: white;
-}
-
-.subnav {
-  float:left;
-  position: static;
-  display: inline-block;
-  padding-top: 0px;
-  margin: auto;
-  width: 175px;
-  height: 200px;
-}
-
-.subnav a{
-  display: block;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13pt;
-  line-height: 2.2;
-  color: black;
-  text-align: right;
-  text-decoration: none;
-  position: static;
-  width: 175px;
-}
-
-.subnav a:hover {
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-}
-
-#purplebox {
-  width: 100%;
-  height: auto;
-  float:left;
-  position: absolute;
-  display: inline-block;
-  padding-top: 75px;
-  margin-top: 100px;
-  width: 175px;
-  margin-left: 0px;
-  background-image: url("../images/purplebox.jpg");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: cover;
-}
-
-.dottedline{
-  float:left;
-  position: relative;
-  display: inline-block;
-  padding-top: 0px;
-  margin: auto;
-  width:5px;
-  top:0;
-  left: 175px;
-  padding-top: 75px;
-  margin-top: 108px;
-  padding-left: 8px;
-  padding-right: 0px;
-  margin-right: 0px;
-}
-
-.dottedline2 {
-  float:left;
-  position: relative;
-  display: inline-block;
-  padding-top: 0px;
-  margin: auto;
-  width:5px;
-  top:0;
-  left: 175px;
-  padding-top: 130px;
-  margin-top: 108px;
-  padding-left: 8px;
-  padding-right: 0px;
-  margin-right: 0px;
-}
-
-/* Begin CSS specific to about page.*/
-
-.maincontentbox {
-  overflow: auto;
-  display: inline-block;
-  float: left;
-  vertical-align: top;
-  position: relative;
-  margin: 100px 85px 50px 50px;
-  padding: 50px;
-  padding-left: 100px;
-  padding-bottom: 50px;
-  width: 60%;
-  height: 50%;
-  background-color: white;
-  opacity: .92;
-  box-shadow: 2px 4px 8px #666666;
-  margin-left: 250px;
-  top:25px;
-}
-/* Begin CSS specific to about page.*/
-
-.imagetextbox {
-  float: right;
-  display: block;
-  width: 25%;
-  padding: 25px 20px 20px 30px;
-}
-
-.imageinside {
-  float: left;
-  display: block;
-  width: 100%;
-  padding-bottom: 15px;
-  padding-top: 40px;
-  object-fit: cover;
-}
-
-/*Begin CSS for Music-discog page*/
-
-.Albums {
-  padding: 10px 10px 10px 10px;
-  align-items: center;
-  float: left;
-  width: 100%;
-}
-
-.album-photo {
-  box-shadow: 2px 4px 8px #666666;
-  border-radius: 5px;
-  float: left;
-  display: block;
-  width: 25%;
-  margin: 20px 20px 20px 20px;
-  object-fit: cover;
-}
-
-table{
-  width: 70%;
-  height: auto;
-  text-align: left;
-  padding: 0px 90px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12pt;
-  line-height: 1.8;
-  float: left;
-}
-
-.sgname{
-  width: 175px;;
-}
-
-.sgtime{
-  width: 25px;
-}
-
-tr:hover {
-  background-color: #f5f5f5;
-}
-.songlist {
-  float: left;
-  padding: 10px 10px 10px 10px;
-}
-
-.about-band{
-  width: 850px;
-  margin-right: 10px;
-  padding-right: 30px;
-  }
-
-.band {
-  position: absolute;
-  width: 300px;
-  top: 0px;
-  right: 30px;
-  padding-left: 30px;
-  margin: 0px 20px;
-}
-
-#ulno-style{
-list-style: none;
-float: right;
-width: 40%;
-padding: none;
-text-indent: none;
-line-height: 1.8;
-background-color: #f5f5f5;
-padding-left: 30px;
-margin-left: 10px;
-margin-bottom: 20px;
-}
-
-/*Begin CSS specific to photogallery page.*/
-
-.gallery-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.photocard-wrap {
-  width: 275px;
-  height: 250px;
-  position: relative;
-  margin-bottom: 25px;
-  text-align: center;
-}
-
-.photocard {
-  width: 250px;
-  height: 225px;
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0;
-  border-radius: 8px;
-  overflow: hidden;
-  z-index: 0;
-  transition: all .3s ease-in-out;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
-  object-fit: cover;
-}
-
-.photocard > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.photocard:hover {
-  width: 275px;
-  height: 250px;
-  z-index: 10;
-  box-shadow: 0 50px 125px rgba(0, 0, 0, 0.4);
-}
-
-/*For video carousel*/
-.video-car-wrap{
-  display: inline-block;
-  position: relative;
-  float: left;
-  width: 100%;
-  height: 100%;
-}
-
-/*For indicator buttons */
-
-.indicator{
-  display: block;
-  position: relative;
-  margin: auto;
-  width: 25%;
-  height: 10%;
-  bottom: 0px;
-  top:15px;
-  background-color: ;
-  padding: 10px;
-}
-
-.dots{
-  display: inline;
-  float: left;
-  width: 20px;
-  height:20px;
-  border-radius: 50%;
-  background-color: #ddd;
-  border-color: rgba(102, 102, 102);
-  box-shadow: 1px 2px 4px #666666;
-  margin: 0 8px;
-  transition: #ffd163 0.6s ease;
-  cursor: pointer;
-  top:100px;
-
-}
-
-.dots:hover {
-  background-color: #ffd163;
-  border: none;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),
-}
-
-/*For video slideshow */
-
-.video-slider{
-  position: relative;
-  display: inline-block;
-  margin: 0 auto;
-  width: 80%;
-  float: left;
-  height: auto;
-}
-
-.video-item {
-  position: absolute;
-  display: inline-inline-block;
-  width: 100%;
-  object-fit: cover;
-}
-
-.video-caption-wrap{
-  position: relative;
-  display: inline-block;
-  margin: 0 auto;
-  width: 80%;
-  float: left;
-  height: auto;
-  bottom: 0;
-}
-
-.video-caption{
- position: absolute; /* Position the background text */
- bottom: 0;
- background: rgba(77, 63, 81, 0.9); /* Black background with 0.5 opacity */
- color: white; /* Grey text */
- width: 100%; /* Full width */
- padding-left: 20px; /* Some padding */
-}
-
-/*For next, prev arrows*/
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: 175px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next{
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-.prev:hover, .next:hover {
-    background-color: rgba(255,209,99,0.8);
-  }
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/*Shop section begins*/
-
-.shop-albums {
-  width: 100%;
-  height: auto;
-  display: inline-block;
-  float: left;
-  padding-bottom: 15px;
-  padding-top: 10px;
-}
-
-.shop-albums2 {
-  width: 100%;
-  height: auto;
-  display: inline-block;
-  float: left;
-  padding-bottom: 75px;
-  padding-top: 10px;
-  border-bottom: 1.4px dotted #4d3f51;
-  border-spacing: 2px;
-}
-.shop-alb-list{
-  width: 33%;
-  float: left;
-  display: inline;
-}
-
-.shop-albphoto{
-  box-shadow: 2px 4px 8px #666666;
-  border-radius: 5px;
-  float: left;
-  display: inline-block;
-  width: 80%;
-  margin-bottom: 20px;
-  object-fit: cover;
-}
-
-.shop-links{
-  position: relative;
-  display: inline;
-  float:right;
-  width: 50%;
-  color: blue;
-  text-decoration: none;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12pt;
-}
-
-.album-title{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13pt;
-  color: #4d3f51;
-}
-
-.buy {
-  display: inline;
-  text-align: left;
-  text-indent: 20px;
-  width: 50%;
-  left: 0;
-  right: 10%;
-  bottom: 0;
-  text-decoration: none;
-  color: blue;
-}
-
-.listen{
-  display: inline;
-  text-align: right;
-  width: 100%;
-  left: 10px;
-  bottom: 0;
-  text-decoration: none;
-  color: #666666;
-}
-
-/* For Records-Singles Filter*/
-
-.shop-singles{
-width: 100%;
-display: block;
-float: left;
-margin-top: 0px;
-padding-bottom: 50px;
-border-bottom: 1.4px dotted #4d3f51;
-border-spacing: 2px;
-}
-
-.singles-list{
-  width: 80%;
-  height: auto;
-  text-align: left;
-  padding: 0px 0px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12pt;
-  line-height: 1.8;
-  float: left;
-}
-
-.song-title{
-  width:50%;
-}
-
-.song-time{
-  width: 20%;
-}
-
-.song-buy{
-  width:8%;
-  text-decoration: none;
-  color: blue;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-}
-.song-buy a {
-  width:8%;
-  text-decoration: none;
-  color: blue;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-}
-
-.song-buy a:hover {
-  background-color: white;
-  color: black;
-  border-bottom: 4px solid #ffd163;
-  border-spacing: 2px;
-}
-
-.song-listen{
-  width:25%;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  text-decoration: none;
-  color: #666666;
-}
-
-.song-listen a {
-  width:25%;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  text-decoration: none;
-  color: #666666;
-}
-
-.song-listen a:hover{
-background-color: white;
-color: black;
-border-bottom: 4px solid #ffd163;
-border-spacing: 2px;
-}
-
-/*Begin Filter Buttons section css*/
-
-/* The "show" class is added to the filtered elements */
-.filter-records{
-  display: none;/* This is really imp for filtered items to hide unfiltered items*/
-  margin-top: 40px;
-}
-
-.show {
-    display: block;
-}
-
-#btn-container{
-  border-bottom: 1px solid #4d3f51;
-  border-spacing: 2px;
-}
-
-.btn {
-    border-radius:5px;
-    outline: none;
-    padding: 12px 15px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12pt;
-    line-height: 1.8;
-    margin-right: 10px;
-    margin-top: 25px;
-    margin-bottom: 50px;
-}
-
-/* Add a light grey background on mouse-over */
-.btn:hover {
-    background-color: #ddd;
-}
-
-/* Add a dark background to the active button */
-.btn.active-b {
-    background-color: #4d3f51;
-    color: white;
-}
-
-.filter-section {
-  display: inline-block;
-  float: left;
-  right: 0;
-  width: 100%;
-}
-
-/* For shop-merch page*/
-/* For Merch-Tickets Filter*/
-
-.shop-tickets {
-  width: 100%;
-  height: auto;
-  display: inline-block;
-  float: left;
-
-}
-/*
-.shop-tickets2 {
-  width: 100%;
-  height: auto;
-  display: inline-block;
-  float: left;
-  padding-bottom: 75px;
-  padding-top: 10px;
-  border-bottom: 1.4px dotted #4d3f51;
-  border-spacing: 2px;
-}
-
-.shop-tkt-list{
-  width: 100%;
-  float: left;
-  display: inline-block;
-}
-*/
-
-.ticket-stub{
-  display: inline-block;
-  float: left;
-  width: 100%;
-  margin-bottom: 20px;
-  top: 0;
-}
-
-.ticket-stub-line{
-  display: inline-block;
-  float: left;
-  width: 100%;
-  margin-bottom: 15px;
-  border-bottom: 1.4px dotted #4d3f51;
-  border-spacing: 2px;
-  padding-bottom: 75px;
-
-}
-
-.tkt-sched{
-  display: inline-block;
-  float: left;
-  width: 15%;
-  height: 180px;
-  background-color: #ddd;
-  text-align: left;
-  padding: 20px;
-  padding-left: 35px;
-  padding-right: 10px;
-  box-shadow: 2px 4px 8px #666666;
-  border-radius: 5px;
-}
-
-.tkt-details{
-    background-color:#ddd;
-    width: 20%;
-    padding: 20px;
-    height: 180px;
-    text-align: left;
-    display: inline-block;
-    float: left;
-    box-shadow: 2px 4px 8px #666666;
-    border-radius: 5px;
-    margin-left: 10px;
-}
-
-.shop-tktphoto{
-  float: left;
-  display: inline-block;
-  width: 30%;
-  height: 220px;
-  box-shadow: 2px 4px 8px #666666;
-  border-radius: 5px;
-  margin-right: 10px;
-  object-fit: cover;
-}
-
-.shoptkt-links{
-  color: blue;
-  text-decoration: none;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11pt;
-  line-height: 1.4;
-}
-
-.tkt-name{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14pt;
-  line-height: 1.8;
-  color: #4d3f51;
-  padding-top: 10px;
-}
-
-.tkt-day{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14pt;
-  line-height: 1.4;
-}
-
-.tkt-date{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18pt;
-  line-height: 0;
-}
-
-.show-time{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 11pt;
-  line-height: 0.8;
-}
-
-.show-title{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13pt;
-  color: black;
-}
-
-.show-venue{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11pt;
-  color: black;
-  line-height: 1.6;
-}
-
-.buytkt {
-  color: blue;
-  text-decoration: none;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11pt;
-  line-height: 6.0;
-}
-
-/* Swag section begins here*/
-
-.shop-swag{
-  display: inline-block;
-  float: left;
-  width: 100%;
-
-}
-
-.swag-list{
-  display: inline-flex;
-  float: left;
-  width: 100%;
-  margin-bottom: 30px;
-  margin-top: 25px;
-}
-
-.swag-list-line{
-  display: inline-flex;
-  float: left;
-  width: 100%;
-  margin-bottom: 30px;
-  margin-top: 25px;
-  border-bottom: 1.4px dotted #4d3f51;
-  border-spacing: 2px;
-}
-
-.swag-item{
-  display: inline-block;
-  float: left;
-  width: 100%;
-  margin-bottom: 25px;
-  padding-right: 0px;
-
-}
-
-.prod-details{
-    width: 30%;
-    height: 180px;
-    text-align: left;
-    display: inline-block;
-    float: left;
-    margin-left: 10px;
-}
-
-.prod-photo{
-  float: left;
-  display: inline-block;
-  width: 50%;
-  height: 220px;
-  box-shadow: 2px 4px 8px #666666;
-  border-radius: 5px;
-  margin-right: 10px;
-
-}
-
-.prod-links{
-  color: blue;
-  text-decoration: none;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11pt;
-  line-height: 1.4;
-}
-
-.prod-title{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13pt;
-  color: black;
-  line-height: 1.4;
-}
-
-.prod-size{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11pt;
-  color: black;
-  line-height: 1.6;
-}
-
-.prod-price{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11pt;
-  color: black;
-  line-height: 1.6;
-}
-
-.buytkt {
-  color: blue;
-  text-decoration: none;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11pt;
-  line-height: 6.0;
-}
-
-.filter-merch{
-  display: none;/* This is really imp for filtered items to hide unfiltered items*/
-  margin-top: 40px;
-}
-
-.show {
-    display: block;
-}
-
-/* Calendar section starts here*/
-
-.calendar-list{
-display: inline;
-float: left;
-width: 100%;
-}
-
-.calendar-event{
-display: inline;
-float: left;
-width: 400px;
-height: 300px;
-margin-right: 35px;
-margin-bottom: 35px;
-}
-
-.when{
-width: 150px;
-height: 250px;
-background-color: #251f1d;
-box-shadow: 4px 8px 14px #f1f1f1;
-border-radius: 5px 0px 0px 5px;
-margin-top: 50px;
-padding: 5px;
-padding-left: 10px;
-display: inline-block;
-float: left;
-}
-
-.eventday{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 12pt;
-  color: #ffd163;
-  text-indent: 10px;
-  text-align: left;
-  padding-top: 10px;
-}
-
-.eventdate{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 48pt;
-  color: white;
-  text-align: center;
-  padding-top: 20px;
-}
-
-.eventmonth{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18pt;
-  color: white;
-  text-align: center;
-  padding-top: 0px;
-}
-
-.eventtime{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16pt;
-  color: white;
-  text-align: center;
-  padding-top: 30px;
-
-}
-
-.where{
-  width: 200px;
-  height: 250px;
-  background-color: #f1f1f1;
-  box-shadow: 4px 8px 10px #666666;
-  border-radius: 0px 5px 5px 0px;
-  margin-top: 50px;
-  padding: 5px;
-  padding-left: 10px;
-  display: inline-block;
-  float: left;
-  margin-left: 10px;
-}
-
-.eventname{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12pt;
-  color: black;
-  text-align: left;
-  padding: 15px;
-}
-
-.eventplace{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13pt;
-  color: black;
-  text-align: left;
-  padding: 15px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-
-.eventaddress{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 12pt;
-  color: black;
-  text-align: left;
-  padding: 0px 20px;
-}
-
-.eventtickets{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12pt;
-  color: blue;
-  text-align: left;
-  padding: 20px 20px;
-  bottom: 0;
-}
-
-.eventtickets a{
-  color: blue;
-  text-align: left;
-  text-decoration: none;
-}
-
-  /*For promos carousel*/
-
-  .promo-car-wrap {
-    display: inline-block;
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 100%;
-  }
-
-  /*For indicator buttons see video pg carousel*/
-
-
-
-  /*For promos slideshow */
-
-  .promo-slider{
-    position: relative;
-    display: inline-block;
-    margin: 0 auto;
-    width: 100%;
-    float: left;
-    height: auto;
-  }
-
-  .promo-item {
-    position: absolute;
-    display: inline-inline-block;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    left: 18%;
-  }
-
-  .promo-img{
-    margin: 0 auto;
-  }
-
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+              header {
+                padding-top: 20px;
+                overflow: hidden;
+                position: sticky;
+                width: 100%;
+              }
+
+              #Logo {
+                width: 100px;
+                height: 92px;
+                padding-top: 15px;
+                padding-left: 30px;
+              }
+
+              body {
+                overflow: hidden;
+                float: left;
+                position: relative;
+                background-color: white;
+                width: 1400px; height: 1200px;
+                margin: 25px 100px 25px 75px;
+              }
+
+              /* Begin CSS for background images.*/
+
+              #bkgd-home {
+                background-image: url("../images/bkg-home.jpg");
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: cover;
+              }
+
+              #bkgd-about {
+                background-image: url("../images/bkg-about.jpg");
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: cover;
+              }
+
+              #bkgd-discog {
+                background-image: url("../images/bkg-discog.jpg");
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: cover;
+              }
+
+              #bkgd-gallery {
+                background-image: url("../images/bkg-gallery.jpg");
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: cover;
+              }
+
+              #bkgd-videos {
+                background-image: url("../images/bkg-videos.jpg");
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: cover;
+              }
+
+              #bkgd-shop {
+                background-image: url("../images/bkg-shop.jpg");
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: cover;
+              }
+
+              #bkgd-calendar {
+                background-image: url("../images/bkg-calendar.jpg");
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: cover;
+              }
+
+              /*Begin CSS for text in website.*/
+
+              h1 {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18pt;
+              }
+
+              h2 {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16pt;
+              }
+
+              h3 {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14pt;
+                color: #666666;
+                line-height: normal;
+              }
+
+              h4 {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14pt;
+                color: black;
+                line-height: normal;
+
+              }
+
+              h5 {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12pt;
+                color: black;
+                line-height: normal;
+
+              }
+
+              p {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11pt;
+                line-height: 1.8;
+              }
+
+              ul {list-style-type: disc;
+                 list-style-position: outside;
+                 padding: 20px;
+                 font-family: Open Sans;
+                 font-style: normal;
+                 font-weight: 400;
+                 font-size: 11pt;
+                 line-height: 1.8;
+              }
+
+              /*a:link{
+              text-decoration: none;
+              color: blue;
+              }
+
+              a:visited {
+                color: #4d3f51;
+                text-decoration: none;
+              }*/
+
+              .caption {
+                font-family: Open Sans;
+                font-style: italic;
+                font-weight: 400;
+                font-size: 11pt;
+                line-height: 1.6;
+              }
+
+              .highlight {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 11pt;
+                line-height: 1.8;
+              }
+
+              /*Begin CSS for Top navigation bar.*/
+
+              .topnav {
+                padding-top: 15px;
+                overflow: hidden;
+                position: fixed;
+                top: 150px;
+                width: 50%;
+                float:left;
+                overflow: auto;
+              }
+
+              .topnav a {
+                float: left;
+                display: block;
+                color: black;
+                font-family: Roboto, sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15pt;
+                text-align: center;
+                padding-left: 0px;
+                padding-top: 20px;
+                padding-right: 0px;
+                padding-bottom: 5px;
+                margin-right: 20px;
+                margin-left: 25px;
+                text-decoration: none;
+                text-align: center;
+              }
+
+              .topnav a:hover {
+                background-color: white;
+                color: black;
+                border-bottom: 5px solid #ffd163;
+                border-spacing: 2px;
+                border-spacing: 25px;
+              }
+
+              .topnav a:active {
+                background-color: white;
+                border-bottom: 5px solid red;
+                border-spacing: 2px;
+                border-spacing: 25px;
+              }
+
+              .videocontrols
+                controlslist: nodownload;
+                autoplay:default;
+              }
+
+              /* Begin CSS for inside pages.*/
+
+              .content {
+                overflow: hidden;
+                display: none;
+                position: relative;
+                float: left;
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                top: 50px;
+                background-color: white;
+              }
+
+              .subnav {
+                float:left;
+                position: static;
+                display: inline-block;
+                padding-top: 0px;
+                margin: auto;
+                width: 175px;
+                height: 200px;
+              }
+
+              .subnav a{
+                display: block;
+                font-family: Roboto, sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13pt;
+                line-height: 2.2;
+                color: black;
+                text-align: right;
+                text-decoration: none;
+                position: static;
+                width: 175px;
+              }
+
+              .subnav a:hover {
+                text-decoration: none;
+                color: black;
+                font-weight: 700;
+              }
+
+              #purplebox {
+                width: 100%;
+                height: auto;
+                float:left;
+                position: absolute;
+                display: inline-block;
+                padding-top: 75px;
+                margin-top: 100px;
+                width: 175px;
+                margin-left: 0px;
+                background-image: url("../images/purplebox.jpg");
+                background-repeat: no-repeat;
+                background-position: left;
+                background-size: cover;
+              }
+
+              .dottedline{
+                float:left;
+                position: relative;
+                display: inline-block;
+                padding-top: 0px;
+                margin: auto;
+                width:5px;
+                top:0;
+                left: 190px;
+                padding-top: 75px;
+                margin-top: 108px;
+                padding-left: 8px;
+                padding-right: 0px;
+                margin-right: 0px;
+              }
+
+              .dottedline2 {
+                float:left;
+                position: relative;
+                display: inline-block;
+                padding-top: 0px;
+                margin: auto;
+                width:5px;
+                top:0;
+                left: 190px;
+                padding-top: 130px;
+                margin-top: 108px;
+                padding-left: 8px;
+                padding-right: 0px;
+                margin-right: 0px;
+              }
+
+              /* Begin CSS specific to about page.*/
+
+              .maincontentbox {
+                overflow: auto;
+                display: inline-block;
+                float: left;
+                vertical-align: top;
+                position: relative;
+                margin: 75px 50px 50px 50px;
+                padding-top: 40px;
+                padding-left: 80px;
+                padding-bottom: 50px;
+                padding-right: 20px;
+                width: 60%;
+                height: 50%;
+                background-color: white;
+                opacity: .92;
+                box-shadow: 2px 4px 8px #666666;
+                margin-left: 235px;
+                top:50px;
+              }
+              /* Begin CSS specific to about page.*/
+
+              .imagetextbox {
+                float: right;
+                display: block;
+                width: 25%;
+                padding: 25px 20px 20px 30px;
+              }
+
+              .imageinside {
+                float: left;
+                display: block;
+                width: 100%;
+                padding-bottom: 15px;
+                padding-top: 40px;
+                object-fit: cover;
+              }
+
+              /*Begin CSS for Music-discog page*/
+
+              .Albums {
+                padding: 10px 10px 10px 10px;
+                align-items: center;
+                float: left;
+                width: 100%;
+              }
+
+              .album-photo {
+                box-shadow: 2px 4px 8px #666666;
+                border-radius: 5px;
+                float: left;
+                display: block;
+                width: 25%;
+                margin: 20px 20px 20px 20px;
+                object-fit: cover;
+              }
+
+              table{
+                width: 70%;
+                height: auto;
+                text-align: left;
+                padding: 0px 90px;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12pt;
+                line-height: 1.8;
+                float: left;
+              }
+
+              .sgname{
+                width: 175px;;
+              }
+
+              .sgtime{
+                width: 25px;
+              }
+
+              tr:hover {
+                background-color: #f5f5f5;
+              }
+              .songlist {
+                float: left;
+                padding: 10px 10px 10px 10px;
+              }
+
+/*Begin CSS specific to band page.*/
+
+              .about-band{
+                width: 100%;
+                margin-right: 10px;
+                padding-right: 20px;
+              }
+
+              .band {
+                width: 95%;
+                margin-right: 25px;
+                padding-right: 30px;
+                padding-top: 15px;
+                padding-bottom: 25px;
+              }
+
+              #ulno-style{
+              list-style: none;
+              float: right;
+              width: 40%;
+              padding: none;
+              text-indent: none;
+              line-height: 1.8;
+              background-color: #f5f5f5;
+              padding-left: 30px;
+              margin-left: 20px;
+              margin-bottom: 15px;
+              }
+
+              .band-gallery{
+                width: 100%;
+                position: relative;
+                float:left;
+                margin-right: 10px;
+                padding-right: 20px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+              }
+
+              .band-pics{
+                width: 33%;
+                box-shadow: 2px 4px 6px #666666;
+                border-radius: 5px;
+              }
+
+      /*Begin CSS specific to photogallery page.*/
+
+              .gallery-list {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              }
+
+              .photocard-wrap {
+                width: 275px;
+                height: 250px;
+                position: relative;
+                margin-bottom: 25px;
+                text-align: center;
+              }
+
+              .photocard {
+                width: 250px;
+                height: 225px;
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0;
+                border-radius: 8px;
+                overflow: hidden;
+                z-index: 0;
+                transition: all .3s ease-in-out;
+                box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+                object-fit: cover;
+              }
+
+              .photocard > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+
+              .photocard:hover {
+                width: 275px;
+                height: 250px;
+                z-index: 10;
+                box-shadow: 0 50px 125px rgba(0, 0, 0, 0.4);
+              }
+
+              /*For video carousel*/
+              .video-car-wrap{
+                display: inline-block;
+                position: relative;
+                float: left;
+                width: 100%;
+                height: 100%;
+              }
+
+              /*For indicator buttons */
+
+              .indicator{
+                display: block;
+                position: relative;
+                margin: auto;
+                width: 25%;
+                height: 10%;
+                bottom: 0px;
+                top:10px;
+                background-color: ;
+                padding: 10px;
+              }
+
+              .dots{
+                display: inline;
+                float: left;
+                width: 20px;
+                height:20px;
+                border-radius: 50%;
+                background-color: #ddd;
+                border-color: rgba(102, 102, 102);
+                box-shadow: 1px 2px 4px #666666;
+                margin: 0 8px;
+                transition: #ffd163 0.6s ease;
+                cursor: pointer;
+                top:75px;
+
+              }
+
+              .dots:hover {
+                background-color: #ffd163;
+                border: none;
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),
+              }
+
+              /*For video slideshow */
+
+              .video-slider{
+                position: relative;
+                display: inline-block;
+                margin: 0 auto;
+                width: 80%;
+                float: left;
+                height: auto;
+              }
+
+              .video-item {
+                position: absolute;
+                display: inline-inline-block;
+                width: 100%;
+                object-fit: cover;
+              }
+
+              .video-caption-wrap{
+                position: relative;
+                display: inline-block;
+                margin: 0 auto;
+                width: 80%;
+                float: left;
+                height: auto;
+                bottom: 0;
+              }
+
+              .video-caption{
+               position: absolute; /* Position the background text */
+               bottom: 0;
+               background: rgba(77, 63, 81, 0.9); /* Black background with 0.5 opacity */
+               color: white; /* Grey text */
+               width: 100%; /* Full width */
+               padding-left: 20px; /* Some padding */
+              }
+
+              /*For next, prev arrows*/
+
+              .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                margin-top: 175px;
+                padding: 16px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+              }
+
+              .next{
+                  right: 0;
+                  border-radius: 3px 0 0 3px;
+                }
+
+              .prev:hover, .next:hover {
+                  background-color: rgba(255,209,99,0.8);
+                }
+
+              /* Fading animation */
+              .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+              }
+
+              @-webkit-keyframes fade {
+                from {opacity: .4}
+                to {opacity: 1}
+              }
+
+              @keyframes fade {
+                from {opacity: .4}
+                to {opacity: 1}
+              }
+
+              /*Shop section begins*/
+
+              .shop-albums {
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                float: left;
+                padding-bottom: 15px;
+                padding-top: 10px;
+              }
+
+              .shop-albums2 {
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                float: left;
+                padding-bottom: 75px;
+                padding-top: 10px;
+                border-bottom: 1.4px dotted #4d3f51;
+                border-spacing: 2px;
+              }
+              .shop-alb-list{
+                width: 33%;
+                float: left;
+                display: inline;
+              }
+
+              .shop-albphoto{
+                box-shadow: 2px 4px 8px #666666;
+                border-radius: 5px;
+                float: left;
+                display: inline-block;
+                width: 80%;
+                margin-bottom: 20px;
+                object-fit: cover;
+              }
+
+              .shop-links{
+                position: relative;
+                display: inline;
+                float:right;
+                width: 50%;
+                color: blue;
+                text-decoration: none;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12pt;
+              }
+
+              .album-title{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13pt;
+                color: #4d3f51;
+              }
+
+              .buy {
+                display: inline;
+                text-align: left;
+                text-indent: 20px;
+                width: 50%;
+                left: 0;
+                right: 10%;
+                bottom: 0;
+                text-decoration: none;
+                color: blue;
+              }
+
+              .listen{
+                display: inline;
+                text-align: right;
+                width: 100%;
+                left: 10px;
+                bottom: 0;
+                text-decoration: none;
+                color: #666666;
+              }
+
+              /* For Records-Singles Filter*/
+
+              .shop-singles{
+              width: 100%;
+              display: block;
+              float: left;
+              margin-top: 0px;
+              padding-bottom: 50px;
+              border-bottom: 1.4px dotted #4d3f51;
+              border-spacing: 2px;
+              }
+
+              .singles-list{
+                width: 80%;
+                height: auto;
+                text-align: left;
+                padding: 0px 0px;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12pt;
+                line-height: 1.8;
+                float: left;
+              }
+
+              .song-title{
+                width:50%;
+              }
+
+              .song-time{
+                width: 20%;
+              }
+
+              .song-buy{
+                width:8%;
+                text-decoration: none;
+                color: blue;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+              }
+              .song-buy a {
+                width:8%;
+                text-decoration: none;
+                color: blue;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+              }
+
+              .song-buy a:hover {
+                background-color: white;
+                color: black;
+                border-bottom: 4px solid #ffd163;
+                border-spacing: 2px;
+              }
+
+              .song-listen{
+                width:25%;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                text-decoration: none;
+                color: #666666;
+              }
+
+              .song-listen a {
+                width:25%;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                text-decoration: none;
+                color: #666666;
+              }
+
+              .song-listen a:hover{
+              background-color: white;
+              color: black;
+              border-bottom: 4px solid #ffd163;
+              border-spacing: 2px;
+              }
+
+              /*Begin Filter Buttons section css*/
+
+              /* The "show" class is added to the filtered elements */
+              .filter-records{
+                display: none;/* This is really imp for filtered items to hide unfiltered items*/
+                margin-top: 40px;
+              }
+
+              .show {
+                  display: block;
+              }
+
+              #btn-container{
+                border-bottom: 1px solid #4d3f51;
+                border-spacing: 2px;
+              }
+
+              .btn {
+                  border-radius:5px;
+                  outline: none;
+                  padding: 12px 15px;
+                  background-color: #f1f1f1;
+                  cursor: pointer;
+                  font-family: Open Sans;
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 12pt;
+                  line-height: 1.8;
+                  margin-right: 10px;
+                  margin-top: 25px;
+                  margin-bottom: 50px;
+              }
+
+              /* Add a light grey background on mouse-over */
+              .btn:hover {
+                  background-color: #ddd;
+              }
+
+              /* Add a dark background to the active button */
+              .btn.active-b {
+                  background-color: #4d3f51;
+                  color: white;
+              }
+
+              .filter-section {
+                display: inline-block;
+                float: left;
+                right: 0;
+                width: 100%;
+              }
+
+              /* For shop-merch page*/
+              /* For Merch-Tickets Filter*/
+
+              .shop-tickets {
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                float: left;
+
+              }
+              /*
+              .shop-tickets2 {
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                float: left;
+                padding-bottom: 75px;
+                padding-top: 10px;
+                border-bottom: 1.4px dotted #4d3f51;
+                border-spacing: 2px;
+              }
+
+              .shop-tkt-list{
+                width: 100%;
+                float: left;
+                display: inline-block;
+              }
+              */
+
+              .ticket-stub{
+                display: inline-block;
+                float: left;
+                width: 100%;
+                margin-bottom: 20px;
+                top: 0;
+              }
+
+              .ticket-stub-line{
+                display: inline-block;
+                float: left;
+                width: 100%;
+                margin-bottom: 15px;
+                border-bottom: 1.4px dotted #4d3f51;
+                border-spacing: 2px;
+                padding-bottom: 75px;
+
+              }
+
+              .tkt-sched{
+                display: inline-block;
+                float: left;
+                width: 15%;
+                height: 180px;
+                background-color: #ddd;
+                text-align: left;
+                padding: 20px;
+                padding-left: 35px;
+                padding-right: 10px;
+                box-shadow: 2px 4px 8px #666666;
+                border-radius: 5px;
+              }
+
+              .tkt-details{
+                  background-color:#ddd;
+                  width: 20%;
+                  padding: 20px;
+                  height: 180px;
+                  text-align: left;
+                  display: inline-block;
+                  float: left;
+                  box-shadow: 2px 4px 8px #666666;
+                  border-radius: 5px;
+                  margin-left: 10px;
+              }
+
+              .shop-tktphoto{
+                float: left;
+                display: inline-block;
+                width: 30%;
+                height: 220px;
+                box-shadow: 2px 4px 8px #666666;
+                border-radius: 5px;
+                margin-right: 10px;
+                object-fit: cover;
+              }
+
+              .shoptkt-links{
+                color: blue;
+                text-decoration: none;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 11pt;
+                line-height: 1.4;
+              }
+
+              .tkt-name{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14pt;
+                line-height: 1.8;
+                color: #4d3f51;
+                padding-top: 10px;
+              }
+
+              .tkt-day{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14pt;
+                line-height: 1.4;
+              }
+
+              .tkt-date{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 18pt;
+                line-height: 0;
+              }
+
+              .show-time{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 11pt;
+                line-height: 0.8;
+              }
+
+              .show-title{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13pt;
+                color: black;
+              }
+
+              .show-venue{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11pt;
+                color: black;
+                line-height: 1.6;
+              }
+
+              .buytkt {
+                color: blue;
+                text-decoration: none;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 11pt;
+                line-height: 6.0;
+              }
+
+              /* Swag section begins here*/
+
+              .shop-swag{
+                display: inline-block;
+                float: left;
+                width: 100%;
+
+              }
+
+              .swag-list{
+                display: inline-flex;
+                float: left;
+                width: 100%;
+                margin-bottom: 30px;
+                margin-top: 25px;
+              }
+
+              .swag-list-line{
+                display: inline-flex;
+                float: left;
+                width: 100%;
+                margin-bottom: 30px;
+                margin-top: 25px;
+                border-bottom: 1.4px dotted #4d3f51;
+                border-spacing: 2px;
+              }
+
+              .swag-item{
+                display: inline-block;
+                float: left;
+                width: 100%;
+                margin-bottom: 25px;
+                padding-right: 0px;
+
+              }
+
+              .prod-details{
+                  width: 30%;
+                  height: 180px;
+                  text-align: left;
+                  display: inline-block;
+                  float: left;
+                  margin-left: 10px;
+              }
+
+              .prod-photo{
+                float: left;
+                display: inline-block;
+                width: 50%;
+                height: 220px;
+                box-shadow: 2px 4px 8px #666666;
+                border-radius: 5px;
+                margin-right: 10px;
+
+              }
+
+              .prod-links{
+                color: blue;
+                text-decoration: none;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 11pt;
+                line-height: 1.4;
+              }
+
+              .prod-title{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13pt;
+                color: black;
+                line-height: 1.4;
+              }
+
+              .prod-size{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11pt;
+                color: black;
+                line-height: 1.6;
+              }
+
+              .prod-price{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11pt;
+                color: black;
+                line-height: 1.6;
+              }
+
+              .buytkt {
+                color: blue;
+                text-decoration: none;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 11pt;
+                line-height: 6.0;
+              }
+
+              .filter-merch{
+                display: none;/* This is really imp for filtered items to hide unfiltered items*/
+                margin-top: 40px;
+              }
+
+              .show {
+                  display: block;
+              }
+
+              /* Calendar section starts here*/
+
+              .calendar-list{
+              display: inline-block;
+              float: left;
+              width: 100%;
+              margin: auto;0px;
+              }
+
+              .calendar-event{
+              display: inline;
+              float: left;
+              width: 48%;
+              margin-right: 10px;
+              margin-bottom: 35px;
+              }
+
+              .when{
+              width: 30%;
+              height: 250px;
+              background-color: #251f1d;
+              box-shadow: 4px 8px 14px #f1f1f1;
+              border-radius: 5px 0px 0px 5px;
+              margin-top: 50px;
+              padding: 5px;
+              padding-left: 10px;
+              display: inline-block;
+              float: left;
+              }
+
+              .where{
+                width: 45%;
+                height: 250px;
+                background-color: #f1f1f1;
+                box-shadow: 4px 8px 10px #666666;
+                border-radius: 0px 5px 5px 0px;
+                margin-top: 50px;
+                padding: 5px;
+                padding-left: 10px;
+                display: inline-block;
+                float: left;
+                margin-left: 10px;
+              }
+
+              .eventday{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 100;
+                font-size: 12pt;
+                color: #ffd163;
+                text-indent: 10px;
+                text-align: left;
+                padding-top: 10px;
+              }
+
+              .eventdate{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 48pt;
+                color: white;
+                text-align: center;
+                padding-top: 20px;
+              }
+
+              .eventmonth{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18pt;
+                color: white;
+                text-align: center;
+                padding-top: 0px;
+              }
+
+              .eventtime{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16pt;
+                color: white;
+                text-align: center;
+                padding-top: 30px;
+
+              }
+
+              .eventname{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12pt;
+                color: black;
+                text-align: left;
+                padding: 15px;
+              }
+
+              .eventplace{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13pt;
+                color: black;
+                text-align: left;
+                padding: 15px;
+                padding-top: 10px;
+                padding-bottom: 5px;
+              }
+
+              .eventaddress{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 200;
+                font-size: 12pt;
+                color: black;
+                text-align: left;
+                padding: 0px 20px;
+              }
+
+              .eventtickets{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12pt;
+                color: blue;
+                text-align: left;
+                padding: 20px 20px;
+                bottom: 0;
+              }
+
+              .eventtickets a{
+                color: blue;
+                text-align: left;
+                text-decoration: none;
+              }
+
+                /*For promos carousel*/
+
+                .promo-car-wrap {
+                  display: inline-block;
+                  position: relative;
+                  float: left;
+                  width: 100%;
+                  height: 100%;
+                }
+
+                /*For indicator buttons see video pg carousel*/
+
+
+
+                /*For promos slideshow */
+
+                .promo-slider{
+                  position: relative;
+                  display: inline-block;
+                  margin: 0 auto;
+                  width: 100%;
+                  float: left;
+                  height: auto;
+
+                }
+
+                .promo-item {
+                  position: absolute;
+                  display: inline-inline-block;
+                  width: 100%;
+                  height: 100%;
+                  margin: 0 auto;
+                  left: 18%;
+                }
+
+                .promo-img{
+                  margin: 0 auto;
+                  padding-bottom: 50px;
+                  object-fit: cover;
+                }
+
+                /* Fading animation */
+                .fade {
+                  -webkit-animation-name: fade;
+                  -webkit-animation-duration: 1.5s;
+                  animation-name: fade;
+                  animation-duration: 1.5s;
+                }
+
+                @-webkit-keyframes fade {
+                  from {opacity: .4}
+                  to {opacity: 1}
+                }
+
+                @keyframes fade {
+                  from {opacity: .4}
+                  to {opacity: 1}
+                }

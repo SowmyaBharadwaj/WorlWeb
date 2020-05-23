@@ -45,6 +45,25 @@ html.lb-disable-scrolling {
     border: 6px solid white;
 }
 
+.video-caption-wrap{
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  width: 80%;
+  float: left;
+  height: auto;
+  bottom: 0;
+}
+
+.video-caption{
+ position: absolute; /* Position the background text */
+ bottom: 0;
+ background: rgba(77, 63, 81, 0.9); /* Black background with 0.5 opacity */
+ color: white; /* Grey text */
+ width: 100%; /* Full width */
+ padding-left: 20px; /* Some padding */
+}
+
 .lightbox a img {
     border: none
 }
