@@ -1327,3 +1327,14 @@
                   from {opacity: .4}
                   to {opacity: 1}
                 }
+
+                /*Contact Page*/
+
+                #ContactDetail {
+                  font-family: Open Sans;
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 11pt;
+                  line-height: 1.8;
+                  color: black;
+                }
