@@ -72,6 +72,13 @@
                 background-size: cover;
               }
 
+              #bkgd-contact {
+                background-image: url("../images/bkg-calendar.jpg");
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: cover;
+              }
+
               /*Begin CSS for text in website.*/
 
               h1 {
