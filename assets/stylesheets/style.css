@@ -343,6 +343,50 @@
                 object-fit: cover;
               }
 
+              /*Begin CSS for resume page*/
+              #ul-resume {
+              list-style: none;
+              float: left;
+              width: 75%;
+              padding: none;
+              text-indent: none;
+              font-size: 12pt;
+              line-height: 1.4;
+              background-color: #f5f5f5;
+              padding-left: 30px;
+              margin-left: 20px;
+              margin-bottom: 15px;
+              }
+
+              .tableResume {
+                width: 80%;
+                height: auto;
+                text-align: left;
+                padding: 0px 30px;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11pt;
+                line-height: 1.8;
+                float: left;
+              }
+
+              .wkname {
+                width: 200px;
+              }
+
+              .wktime {
+                width: 25px;
+              }
+
+              tr:hover {
+                background-color: #f5f5f5;
+              }
+              .wklist {
+                float: left;
+                padding: 10px 10px 10px 10px;
+              }
+
               /*Begin CSS for Music-discog page*/
 
               .Albums {
@@ -425,13 +469,13 @@
                 position: relative;
                 float:left;
                 margin-right: 10px;
-                padding-right: 20px;
+                padding-right: 10px;
                 padding-top: 30px;
                 padding-bottom: 30px;
               }
 
               .band-pics{
-                width: 33%;
+                width: 30%;
                 box-shadow: 2px 4px 6px #666666;
                 border-radius: 5px;
               }
